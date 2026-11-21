@@ -12,31 +12,36 @@
       "id": "fracao",
       "pt": "fração",
       "ru": "дробь",
-      "explanation_ru": "Число, которое показывает часть целого, например 3/4."
+      "explanation_ru": "Число, которое показывает часть целого, например 3/4.",
+      "explanation_pt": "Número que pode representar partes iguais de um todo. Por exemplo, 3/4 representa três quartos."
     },
     {
       "id": "numerador",
       "pt": "numerador",
       "ru": "числитель",
-      "explanation_ru": "Верхнее число дроби: сколько равных частей рассматриваем."
+      "explanation_ru": "Верхнее число дроби: сколько равных частей рассматриваем.",
+      "explanation_pt": "Número que fica por cima do traço da fração e indica quantas partes iguais consideramos."
     },
     {
       "id": "denominador",
       "pt": "denominador",
       "ru": "знаменатель",
-      "explanation_ru": "Нижнее число дроби: на сколько равных частей разделено целое."
+      "explanation_ru": "Нижнее число дроби: на сколько равных частей разделено целое.",
+      "explanation_pt": "Número que fica por baixo do traço da fração e indica em quantas partes iguais dividimos a unidade."
     },
     {
       "id": "partes-iguais",
       "pt": "partes iguais",
       "ru": "равные части",
-      "explanation_ru": "Части одинакового размера; для плоской фигуры — одинаковой площади."
+      "explanation_ru": "Части одинакового размера; для плоской фигуры — одинаковой площади.",
+      "explanation_pt": "Partes com a mesma medida. Numa figura plana, têm a mesma área."
     },
     {
       "id": "metade",
       "pt": "metade",
       "ru": "половина",
-      "explanation_ru": "Одна из двух равных частей целого."
+      "explanation_ru": "Одна из двух равных частей целого.",
+      "explanation_pt": "Uma das duas partes iguais de um todo."
     }
   ],
   "questions": [
@@ -49,7 +54,8 @@
       ],
       "answer": 0,
       "explanation": "Três dos oito quadrados iguais foram comidos.",
-      "explanation_ru": "Съели три из восьми равных частей."
+      "explanation_ru": "Съели три из восьми равных частей.",
+      "prompt_ru": "Плитка шоколада состоит из 8 одинаковых квадратиков. Ты съел(а) 3. Какую часть плитки ты съел(а)?"
     },
     {
       "prompt": "Na fração 2/5, o que indica o número 5?",
@@ -60,7 +66,13 @@
       ],
       "answer": 1,
       "explanation": "O denominador indica em quantas partes iguais a unidade foi dividida.",
-      "explanation_ru": "Знаменатель показывает количество равных частей целого."
+      "explanation_ru": "Знаменатель показывает количество равных частей целого.",
+      "prompt_ru": "Что показывает число 5 в дроби 2/5?",
+      "options_ru": [
+        "Количество выбранных частей",
+        "Количество равных частей целого",
+        "Количество целых единиц"
+      ]
     },
     {
       "prompt": "Duas partes de áreas diferentes representam sempre duas metades?",
@@ -70,7 +82,12 @@
       ],
       "answer": 1,
       "explanation": "Metades têm de ter a mesma área.",
-      "explanation_ru": "Половины должны быть равными по площади."
+      "explanation_ru": "Половины должны быть равными по площади.",
+      "prompt_ru": "Могут ли две части разной площади быть двумя половинами?",
+      "options_ru": [
+        "Да",
+        "Нет"
+      ]
     }
   ]
 }

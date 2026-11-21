@@ -1,1 +1,261 @@
-const SUBJECTS=[["portugues","Português"],["matematica","Matemática"],["ciencias","Ciências Naturais"],["hgp","História e Geografia de Portugal"],["ingles","Inglês"],["visual","Educação Visual"],["tecnologica","Educação Tecnológica"],["musical","Educação Musical"],["fisica","Educação Física"],["cidadania","Cidadania e Desenvolvimento"],["tic","TIC"],["emr","Educação Moral e Religiosa (opcional)"]];const $=s=>document.querySelector(s);const safe=(s)=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));const store=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};let year=store("pt-year","5"),mode=store("pt-mode","pt"),lesson=null;$("#year").value=year;$("#mode").value=mode;function save(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch{}}function renderSubjects(){$("#subjects").innerHTML=SUBJECTS.map(([id,name])=>{const available=year==="5"&&id==="matematica";return '<article class="subject"><span class="tag">'+(available?"Aula demonstrativa":"Em preparação")+'</span><h3>'+safe(name)+'</h3><p class="muted">'+safe(year)+'.º ano</p><button '+(available?'data-open="fractions"':'disabled')+'>'+(available?"Abrir aula":"Em breve")+'</button></article>'}).join("")}function renderWords(){const words=store("pt-words",[]);$("#words").innerHTML=words.length?words.map(w=>'<div class="word"><strong>'+safe(w.pt)+'</strong>'+(mode==="ru"?" — "+safe(w.ru)+"<br><small>"+safe(w.explanation_ru)+"</small>":"")+'</div>').join(""):'<p class="muted">Ainda não guardaste palavras.</p>'}async function openLesson(){const area=$("#lesson");area.hidden=false;area.innerHTML="<p>A carregar...</p>";try{const res=await fetch("./content/lessons/5/matematica/fracoes-introducao.json");if(!res.ok)throw Error("Ficheiro indisponível");lesson=await res.json();renderLesson();area.scrollIntoView({behavior:"smooth"})}catch(e){area.textContent="Não foi possível carregar a aula."}}function renderLesson(){if(!lesson)return;const ru=mode==="ru";const area=$("#lesson");area.innerHTML='<span class="tag">Matemática · 5.º ano · demonstração</span><h2>'+safe(lesson.title)+'</h2><p>'+safe(lesson.intro)+'</p>'+(ru?'<p lang="ru">'+safe(lesson.intro_ru)+'</p>':'')+'<h3>O meu vocabulário</h3>'+lesson.vocabulary.map(w=>'<div class="question"><strong>'+safe(w.pt)+'</strong>'+(ru?' — '+safe(w.ru)+'<p lang="ru">'+safe(w.explanation_ru)+'</p>':'')+'</div>').join("")+'<button class="primary" id="add-words">Guardar palavras no dicionário</button><h3>Praticar</h3><form id="quiz">'+lesson.questions.map((q,i)=>'<fieldset class="question"><legend><strong>'+(i+1)+'. '+safe(q.prompt)+'</strong></legend>'+q.options.map((o,j)=>'<label><input type="radio" name="q'+i+'" value="'+j+'"> '+safe(o)+'</label>').join("")+'<p id="feedback-'+i+'" class="feedback" aria-live="polite"></p></fieldset>').join("")+'<button class="primary" type="submit">Verificar respostas</button><p id="result" aria-live="polite"></p></form>';$("#add-words").onclick=()=>{const existing=store("pt-words",[]);const ids=new Set(existing.map(w=>w.id));lesson.vocabulary.forEach(w=>{if(!ids.has(w.id)){existing.push(w);ids.add(w.id)}});save("pt-words",existing);renderWords();$("#add-words").textContent="Palavras guardadas ✓"};$("#quiz").onsubmit=e=>{e.preventDefault();let correct=0;lesson.questions.forEach((q,i)=>{const chosen=$("#quiz").querySelector('input[name="q'+i+'"]:checked');const ok=chosen&&Number(chosen.value)===q.answer;if(ok)correct++;$("#feedback-"+i).textContent=(ok?"✓ ":"✗ ")+q.explanation+(ru?" "+q.explanation_ru:"")});$("#result").textContent="Resultado: "+correct+"/"+lesson.questions.length;const progress=store("pt-progress",{});progress[lesson.id]={correct,total:lesson.questions.length,updatedAt:new Date().toISOString()};save("pt-progress",progress)}}$("#year").onchange=e=>{year=e.target.value;save("pt-year",year);$("#lesson").hidden=true;lesson=null;renderSubjects()};$("#mode").onchange=e=>{mode=e.target.value;save("pt-mode",mode);renderWords();renderLesson()};$("#subjects").onclick=e=>{if(e.target.closest("[data-open]"))openLesson()};renderSubjects();renderWords();
+const SUBJECTS = [
+  ["portugues", "Português"],
+  ["matematica", "Matemática"],
+  ["ciencias", "Ciências Naturais"],
+  ["hgp", "História e Geografia de Portugal"],
+  ["ingles", "Inglês"],
+  ["visual", "Educação Visual"],
+  ["tecnologica", "Educação Tecnológica"],
+  ["musical", "Educação Musical"],
+  ["fisica", "Educação Física"],
+  ["cidadania", "Cidadania e Desenvolvimento"],
+  ["tic", "TIC"],
+  ["emr", "Educação Moral e Religiosa (opcional)"]
+];
+const LESSONS = [{
+  year: "5",
+  subject: "matematica",
+  slug: "fracoes-introducao",
+  title: "Frações: partes de um todo"
+}];
+const YEARS = ["5", "6"];
+const MODE_LABELS = { pt: "Português", ru: "Português + russo" };
+const $ = selector => document.querySelector(selector);
+const safe = value => String(value ?? "").replace(/[&<>"']/g, char =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]
+);
+
+function load(key, fallback) {
+  try {
+    return JSON.parse(localStorage.getItem(key)) ?? fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function save(key, value) {
+  try {
+    localStorage.setItem(key, JSON.stringify(value));
+  } catch {
+    // The current session still works when browser storage is unavailable.
+  }
+}
+
+let year = String(load("pt-year", "5"));
+if (!YEARS.includes(year)) year = "5";
+let mode = load("pt-mode", null);
+if (mode !== "pt" && mode !== "ru") mode = null;
+let renderId = 0;
+
+const page = $("#page");
+const dialog = $("#mode-dialog");
+const modeButton = $("#change-mode");
+const yearLabel = value => `${value}.º ano`;
+const catalogLink = value => `#disciplinas/${value}`;
+const lessonLink = entry => `#aula/${entry.year}/${entry.subject}/${entry.slug}`;
+const heading = title => `<h1 id="page-heading" tabindex="-1">${safe(title)}</h1>`;
+const russian = (value, tag = "p") => value
+  ? `<${tag} lang="ru" data-russian>${safe(value)}</${tag}>`
+  : "";
+
+function applyMode() {
+  page.dataset.mode = mode || "pt";
+  modeButton.textContent = mode ? `Apoio linguístico · ${MODE_LABELS[mode]}` : "Apoio linguístico";
+  dialog.querySelectorAll("[data-mode]").forEach(button => {
+    button.setAttribute("aria-pressed", String(button.dataset.mode === mode));
+  });
+}
+
+function openMode() {
+  $("#close-mode").hidden = !mode;
+  dialog.showModal();
+  (dialog.querySelector('[aria-pressed="true"]') || dialog.querySelector("[data-mode]")).focus();
+}
+
+modeButton.addEventListener("click", openMode);
+$("#close-mode").addEventListener("click", () => dialog.close());
+dialog.addEventListener("cancel", event => {
+  if (!mode) event.preventDefault();
+});
+dialog.addEventListener("click", event => {
+  const choice = event.target.closest("[data-mode]");
+  if (!choice) return;
+  const firstChoice = !mode;
+  mode = choice.dataset.mode;
+  save("pt-mode", mode);
+  applyMode();
+  dialog.close();
+  if (firstChoice && (!location.hash || location.hash === "#inicio")) {
+    location.hash = "#anos";
+  } else if (firstChoice) {
+    $("#page-heading").focus();
+  }
+});
+
+$(".skip").addEventListener("click", event => {
+  event.preventDefault();
+  $("#page-heading")?.focus();
+});
+
+function renderCatalog() {
+  return `<a href="#anos">← Escolher outro ano</a>
+    ${heading(`Disciplinas · ${yearLabel(year)}`)}
+    <p class="muted">O catálogo está a ser preparado.</p>
+    <div class="grid">${SUBJECTS.map(([id, name]) => {
+      const lessons = LESSONS.filter(entry => entry.year === year && entry.subject === id);
+      return `<article class="subject">
+        <h2>${safe(name)}</h2>
+        ${lessons.length ? lessons.map(entry =>
+          `<a class="action" href="${lessonLink(entry)}">${safe(entry.title)}</a>`
+        ).join("") : '<p class="muted">Em preparação</p>'}
+      </article>`;
+    }).join("")}</div>`;
+}
+
+function renderWords() {
+  const words = load("pt-words", []);
+  return `${heading("O meu dicionário")}
+    <p class="muted">Guarda palavras das aulas neste dispositivo.</p>
+    ${words.length ? `<ul class="word-grid">${words.map(word =>
+      `<li class="word"><strong>${safe(word.pt)}</strong>
+        ${word.explanation_pt ? `<p>${safe(word.explanation_pt)}</p>` : ""}
+        ${russian(word.ru, "span")}${russian(word.explanation_ru)}</li>`
+    ).join("")}</ul>` : '<p class="muted">Ainda não guardaste palavras.</p>'}`;
+}
+
+function renderLesson(lesson, area) {
+  const previous = load("pt-progress", {})[lesson.id];
+  area.innerHTML = `<p>${safe(lesson.intro)}</p>
+    ${russian(lesson.intro_ru)}
+    <h2>O meu vocabulário</h2>
+    <dl>${lesson.vocabulary.map(word =>
+      `<div class="term"><dt><strong>${safe(word.pt)}</strong> ${russian(word.ru, "span")}</dt>
+        <dd>${word.explanation_pt ? `<p>${safe(word.explanation_pt)}</p>` : ""}${russian(word.explanation_ru)}</dd></div>`
+    ).join("")}</dl>
+    <button class="primary" id="add-words" type="button">Guardar palavras no dicionário</button>
+    <p id="word-status" role="status"></p>
+    <h2>Praticar</h2>
+    ${previous ? `<p class="muted" id="previous-result">Último resultado: ${safe(previous.correct)}/${safe(previous.total)}</p>` : ""}
+    <form id="quiz">
+      ${lesson.questions.map((question, index) =>
+        `<fieldset class="question">
+          <legend><strong>${index + 1}. ${safe(question.prompt)}</strong> ${russian(question.prompt_ru, "span")}</legend>
+          ${question.options.map((option, choice) =>
+            `<label><input type="radio" name="q${index}" value="${choice}">
+              <span>${safe(option)} ${russian(question.options_ru?.[choice], "span")}</span></label>`
+          ).join("")}
+          <div id="feedback-${index}" class="feedback"></div>
+        </fieldset>`
+      ).join("")}
+      <button class="primary" type="submit">Verificar respostas</button>
+      <p id="result" role="status"></p>
+    </form>`;
+
+  $("#add-words").addEventListener("click", () => {
+    const existing = load("pt-words", []);
+    const words = new Map(existing.map(word => [word.id, word]));
+    lesson.vocabulary.forEach(word => words.set(word.id, { ...words.get(word.id), ...word }));
+    save("pt-words", [...words.values()]);
+    $("#word-status").textContent = "Palavras guardadas.";
+  });
+
+  $("#quiz").addEventListener("submit", event => {
+    event.preventDefault();
+    const answers = new FormData(event.currentTarget);
+    let correct = 0;
+    lesson.questions.forEach((question, index) => {
+      const answer = answers.get(`q${index}`);
+      const ok = answer !== null && Number(answer) === question.answer;
+      if (ok) correct++;
+      $(`#feedback-${index}`).innerHTML =
+        `<p>${ok ? "Correto." : answer === null ? "Sem resposta." : "Resposta incorreta."} ${safe(question.explanation)}</p>${russian(question.explanation_ru)}`;
+    });
+    $("#previous-result")?.remove();
+    $("#result").textContent = `Resultado: ${correct}/${lesson.questions.length}`;
+    const progress = load("pt-progress", {});
+    progress[lesson.id] = { correct, total: lesson.questions.length, updatedAt: new Date().toISOString() };
+    save("pt-progress", progress);
+  });
+}
+
+async function openLesson(entry, currentRender) {
+  const area = $("#lesson");
+  try {
+    const response = await fetch(`./content/lessons/${entry.year}/${entry.subject}/${entry.slug}.json`);
+    if (!response.ok) throw new Error("Ficheiro indisponível");
+    const lesson = await response.json();
+    if (currentRender === renderId) renderLesson(lesson, area);
+  } catch {
+    if (currentRender !== renderId) return;
+    area.innerHTML = '<p role="alert">Não foi possível carregar a aula.</p><button type="button">Tentar novamente</button>';
+    area.querySelector("button").addEventListener("click", renderRoute);
+  }
+}
+
+function renderRoute(focus = true) {
+  const currentRender = ++renderId;
+  const hash = location.hash.slice(1) || "inicio";
+  const [route, selectedYear, subject, slug, ...extra] = hash.split("/");
+  const entry = route === "aula" && !extra.length && LESSONS.find(lesson =>
+    lesson.year === selectedYear && lesson.subject === subject && lesson.slug === slug
+  );
+  let active = route;
+  if (hash === "inicio") {
+    page.innerHTML = `<section class="hero">
+      ${heading("Estuda, compreende, pratica.")}
+      <p>Materiais de apoio escolar para o 2.º ciclo. Escolhe o teu ano e a forma como preferes aprender.</p>
+      <a class="action" href="#anos">Escolher ano</a>
+    </section>`;
+  } else if (hash === "anos") {
+    page.innerHTML = `${heading("Escolhe o teu ano")}
+      <div class="grid">${YEARS.map(value =>
+        `<a class="year-card" href="${catalogLink(value)}">${yearLabel(value)}</a>`
+      ).join("")}</div>`;
+  } else if (hash === "disciplinas" || YEARS.some(value => hash === `disciplinas/${value}`)) {
+    if (selectedYear) {
+      year = selectedYear;
+      save("pt-year", year);
+    }
+    page.innerHTML = renderCatalog();
+  } else if (entry) {
+    active = "disciplinas";
+    year = entry.year;
+    save("pt-year", year);
+    const subjectName = SUBJECTS.find(([id]) => id === entry.subject)[1];
+    page.innerHTML = `<a href="${catalogLink(year)}">← Disciplinas · ${yearLabel(year)}</a>
+      <article class="panel">
+        <p class="tag">${safe(subjectName)} · ${yearLabel(year)} · demonstração</p>
+        ${heading(entry.title)}
+        <div id="lesson"><p role="status">A carregar…</p></div>
+      </article>`;
+    openLesson(entry, currentRender);
+  } else if (hash === "dicionario") {
+    page.innerHTML = renderWords();
+  } else if (hash === "sobre") {
+    page.innerHTML = `<section class="panel">${heading("Sobre o projeto")}
+      <p>Plataforma educativa independente em desenvolvimento. Os materiais são originais e sujeitos a revisão pedagógica. As Aprendizagens Essenciais são a referência curricular; a sequência dos temas será organizada com apoio de outras fontes educativas, sem reprodução dos seus conteúdos.</p>
+      <p>Esta versão é uma demonstração funcional, não um curso completo.</p></section>`;
+  } else {
+    active = "";
+    page.innerHTML = `${heading("Página indisponível")}<a href="#anos">Escolher ano</a>`;
+  }
+
+  document.querySelectorAll("[data-nav]").forEach(link => {
+    if (link.dataset.nav === active) {
+      link.setAttribute("aria-current", entry ? "location" : "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+  const title = $("#page-heading");
+  document.title = `${title.textContent} · A Minha Escola`;
+  if (focus && !dialog.open) {
+    title.focus({ preventScroll: true });
+    window.scrollTo(0, 0);
+  }
+}
+
+window.addEventListener("hashchange", () => renderRoute());
+renderRoute(false);
+applyMode();
+if (!mode) openMode();
