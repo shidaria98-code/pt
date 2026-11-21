@@ -1,0 +1,76 @@
+{
+  "id": "pt-5-mat-fracoes-introducao",
+  "year": 5,
+  "subject": "matematica",
+  "title": "Frações: partes de um todo",
+  "status": "draft",
+  "curriculum_alignment": "pending_review",
+  "intro": "Imagina uma pizza dividida em quatro partes iguais. Uma parte representa 1/4. O denominador indica em quantas partes iguais dividimos a unidade; o numerador indica quantas partes consideramos.",
+  "intro_ru": "Представь пиццу, разделённую на четыре равные части. Одна часть — это 1/4. Знаменатель показывает, на сколько равных частей разделили целое, а числитель — сколько частей взяли.",
+  "vocabulary": [
+    {
+      "id": "fracao",
+      "pt": "fração",
+      "ru": "дробь",
+      "explanation_ru": "Число, которое показывает часть целого, например 3/4."
+    },
+    {
+      "id": "numerador",
+      "pt": "numerador",
+      "ru": "числитель",
+      "explanation_ru": "Верхнее число дроби: сколько равных частей рассматриваем."
+    },
+    {
+      "id": "denominador",
+      "pt": "denominador",
+      "ru": "знаменатель",
+      "explanation_ru": "Нижнее число дроби: на сколько равных частей разделено целое."
+    },
+    {
+      "id": "partes-iguais",
+      "pt": "partes iguais",
+      "ru": "равные части",
+      "explanation_ru": "Части одинакового размера; для плоской фигуры — одинаковой площади."
+    },
+    {
+      "id": "metade",
+      "pt": "metade",
+      "ru": "половина",
+      "explanation_ru": "Одна из двух равных частей целого."
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "Uma barra tem 8 quadrados iguais. Comeste 3. Que fração comeste?",
+      "options": [
+        "3/8",
+        "8/3",
+        "3/5"
+      ],
+      "answer": 0,
+      "explanation": "Três dos oito quadrados iguais foram comidos.",
+      "explanation_ru": "Съели три из восьми равных частей."
+    },
+    {
+      "prompt": "Na fração 2/5, o que indica o número 5?",
+      "options": [
+        "Partes escolhidas",
+        "Partes iguais da unidade",
+        "Número de unidades"
+      ],
+      "answer": 1,
+      "explanation": "O denominador indica em quantas partes iguais a unidade foi dividida.",
+      "explanation_ru": "Знаменатель показывает количество равных частей целого."
+    },
+    {
+      "prompt": "Duas partes de áreas diferentes representam sempre duas metades?",
+      "options": [
+        "Sim",
+        "Não"
+      ],
+      "answer": 1,
+      "explanation": "Metades têm de ter a mesma área.",
+      "explanation_ru": "Половины должны быть равными по площади."
+    }
+  ]
+}
