@@ -39,20 +39,81 @@ function queueVocabularyErrors(parts, answers, dictionary) {
   save(VOCABULARY_REVIEW_KEY, review);
 }
 
-function vocabularyRound(words, pending) {
-  return words.flatMap(word => {
-    const review = pending[word.id] ?? {};
-    const tasks = [];
-    if (review.meaning) tasks.push({ word, type: "meaning", distractors: review.meaning });
-    if (review.spelling) tasks.push({ word, type: "spelling" });
-    if (!tasks.length) tasks.push({ word, type: "spelling" });
-    return tasks.map(task => ({ ...task, priority: Boolean(review[task.type]) }));
-  }).sort((left, right) => Number(right.priority) - Number(left.priority));
+const VOCABULARY_ROUND_SIZE = 6;
+const VOCABULARY_FORMATS = ["term", "meaning", "pair", "term", "letter", "pair"];
+
+function shuffleVocabulary(values) {
+  const result = [...values];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
 }
 
-function renderVocabularyTrainer() {
+function vocabularyRound(words, pending, seen) {
+  const fresh = words.filter(word => !seen.has(word.id));
+  const available = fresh.length ? fresh : words;
+  if (!fresh.length) seen.clear();
+
+  return shuffleVocabulary(available)
+    .sort((a, b) => Number(Boolean(pending[b.id])) - Number(Boolean(pending[a.id])))
+    .slice(0, VOCABULARY_ROUND_SIZE)
+    .map((word, position) => {
+      const review = pending[word.id] ?? {};
+      const type = review.meaning ? "meaning" : review.spelling ? "letter" : VOCABULARY_FORMATS[position];
+      const alternatives = shuffleVocabulary(words.filter(other =>
+        other.id !== word.id && other.pt !== word.pt && other.explanation_pt !== word.explanation_pt
+      ));
+      return vocabularyTask(word, type, alternatives, Array.isArray(review.meaning) ? review.meaning : []);
+    });
+}
+
+function vocabularyTask(word, type, alternatives, pendingDefinitions) {
+  const distractors = [...new Set([...pendingDefinitions, ...alternatives.map(other => other.explanation_pt)])].slice(0, 2);
+  if (type === "term" && alternatives.length) {
+    return {
+      word, key: "meaning", distractors, prompt: "Que palavra corresponde à definição?",
+      clue: word.explanation_pt, russianClue: word.explanation_ru, expected: word.pt,
+      options: shuffleVocabulary([word.pt, ...[...new Set(alternatives.map(other => other.pt))].slice(0, 2)])
+    };
+  }
+  if (type === "meaning" && distractors.length) {
+    return {
+      word, key: "meaning", distractors, prompt: `O que significa «${word.pt}»?`,
+      expected: word.explanation_pt, options: shuffleVocabulary([word.explanation_pt, ...distractors])
+    };
+  }
+  if (type === "pair" && distractors.length) {
+    const matches = Math.random() < .5;
+    return {
+      word, key: "meaning", distractors, prompt: `Esta definição corresponde a «${word.pt}»?`,
+      clue: matches ? word.explanation_pt : distractors[0],
+      expected: matches ? "Sim" : "Não", options: ["Sim", "Não"]
+    };
+  }
+
+  const letters = Array.from(word.pt);
+  const accented = letters.findIndex(letter => /\p{M}/u.test(letter.normalize("NFD")));
+  const eligible = letters.map((letter, index) => /\p{L}/u.test(letter) ? index : -1).filter(index => index >= 0);
+  const index = accented >= 0 ? accented : eligible[Math.floor(Math.random() * eligible.length)];
+  const expected = letters[index];
+  const plain = expected.normalize("NFD").replace(/\p{M}/gu, "");
+  const pool = [...new Set([plain, `${plain}\u0301`.normalize("NFC"), ...Array.from("aeioursm")])]
+    .filter(letter => letter !== expected);
+  const choices = accented >= 0 ? [plain, ...shuffleVocabulary(pool.filter(letter => letter !== plain)).slice(0, 1)]
+    : shuffleVocabulary(pool).slice(0, 2);
+  letters[index] = "_";
+  return {
+    word, key: "spelling", prompt: "Que letra falta?",
+    clue: letters.join(""), hint: word.explanation_pt, russianClue: word.ru,
+    expected, options: shuffleVocabulary([expected, ...choices])
+  };
+}
+
+function renderVocabularyTrainer(seen = new Set()) {
   const words = load("pt-words", []).filter(word => word.pt && word.explanation_pt);
-  const round = vocabularyRound(words, load(VOCABULARY_REVIEW_KEY, {}));
+  const round = vocabularyRound(words, load(VOCABULARY_REVIEW_KEY, {}), seen);
   let position = 0;
   let correct = 0;
 
@@ -64,31 +125,32 @@ function renderVocabularyTrainer() {
   function renderCard(focus = false) {
     if (position >= round.length) {
       card.innerHTML = round.length
-        ? `<h2 tabindex="-1">Treino concluído</h2><p>Resultado: ${correct}/${round.length}.</p>
-           <button type="button">Treinar outra vez</button>`
+        ? `<h2 tabindex="-1">Ronda concluída!</h2><p>Acertaste em ${correct} de ${round.length}.</p>
+           <button class="primary" type="button">Próxima ronda</button>`
         : "<p>Guarda palavras de uma aula para começares a treinar.</p>";
       card.querySelector("button")?.addEventListener("click", () => {
-        renderVocabularyTrainer();
+        renderVocabularyTrainer(seen);
         $("#page-heading").focus();
       });
       if (focus) card.querySelector("h2")?.focus();
       return;
     }
 
-    const { word, type, distractors = [] } = round[position];
-    const options = [...new Set([word.explanation_pt, ...distractors])].sort((a, b) => a.localeCompare(b, "pt-PT"));
-    const isChoice = type === "meaning";
-    const prompt = isChoice ? `O que significa «${word.pt}»?` : "Escreve o termo em português.";
-    const input = isChoice
-      ? options.map((option, index) => `<label><input type="radio" name="answer" value="${index}" required>
-          <span>${safe(option)}</span></label>`).join("")
-      : `<label class="vocabulary-input">Resposta <input name="answer" type="text" required autocomplete="off"></label>`;
+    const { word, key, distractors, prompt, clue, hint, russianClue, expected, options } = round[position];
+    const input = options.map((option, index) => `<label><input type="radio" name="answer" value="${index}" required>
+      <span>${safe(option)}</span></label>`).join("");
+    const meter = round.map((_, index) =>
+      `<span${index < position ? " data-done" : index === position ? " data-current" : ""}></span>`
+    ).join("");
 
     card.innerHTML = `<p class="muted">Palavra ${position + 1} de ${round.length}</p>
+      <div class="vocab-meter" style="--round-size:${round.length}" aria-hidden="true">${meter}</div>
       <form id="vocabulary-answer">
         <fieldset class="question">
           <legend tabindex="-1"><strong>${safe(prompt)}</strong></legend>
-          ${type === "spelling" ? `<p>${safe(word.explanation_pt)}</p>${russian(word.ru, "span")}` : ""}
+          ${clue ? `<p class="vocab-clue">${safe(clue)}</p>` : ""}
+          ${hint ? `<p>${safe(hint)}</p>` : ""}
+          ${russian(russianClue)}
           ${input}
           <button class="primary" type="submit">Verificar</button>
         </fieldset>
@@ -104,14 +166,13 @@ function renderVocabularyTrainer() {
       event.preventDefault();
       const answer = new FormData(form).get("answer");
       if (answer === null || !answer.trim()) return;
-      const ok = isChoice ? options[Number(answer)] === word.explanation_pt
-        : spellingAnswer(answer) === spellingAnswer(word.pt);
+      const ok = options[Number(answer)] === expected;
       if (ok) correct += 1;
 
       const review = load(VOCABULARY_REVIEW_KEY, {});
       const pending = { ...review[word.id] };
-      if (ok) delete pending[type];
-      else pending[type] = isChoice ? distractors : true;
+      if (ok) delete pending[key];
+      else pending[key] = distractors ?? true;
       if (Object.keys(pending).length) review[word.id] = pending;
       else delete review[word.id];
       save(VOCABULARY_REVIEW_KEY, review);
@@ -125,6 +186,7 @@ function renderVocabularyTrainer() {
     });
 
     next.addEventListener("click", () => {
+      seen.add(word.id);
       position += 1;
       renderCard(true);
     });

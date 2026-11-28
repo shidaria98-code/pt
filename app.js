@@ -99,6 +99,15 @@ $(".skip").addEventListener("click", event => {
 
 const hgpLink = "#hgp/5/02";
 
+function lessonMenu(subject, title, summary = title) {
+  const entries = LESSONS.filter(lesson => lesson.year === "5" && lesson.subject === subject);
+  return `<details class="lesson-menu">
+    <summary><span>${safe(summary)}</span></summary>
+    ${subject === "hgp" ? `<a class="topic-link" href="${hgpLink}">${safe(HGP_TOPIC)}</a>` : ""}
+    <ul>${entries.map(entry => `<li><a href="${lessonLink(entry)}">${safe(entry.title)}</a></li>`).join("")}</ul>
+  </details>`;
+}
+
 function renderCatalog() {
   return `<a href="#anos">← Escolher outro ano</a>
     ${heading(`Disciplinas · ${yearLabel(year)}`)}
@@ -108,7 +117,7 @@ function renderCatalog() {
       return `<article class="subject">
         <h2>${safe(name)}</h2>
         ${year === "5" && id === "hgp"
-          ? `<a class="action" href="${hgpLink}">${safe(HGP_TOPIC)}</a>`
+          ? lessonMenu("hgp", HGP_TOPIC, "Escolher uma aula")
           : lessons.length ? lessons.map(entry =>
           `<a class="action" href="${lessonLink(entry)}">${safe(entry.title)}</a>`
         ).join("") : '<p class="muted">Em preparação</p>'}
@@ -222,7 +231,10 @@ function renderRoute(focus = true) {
       ${heading("Estuda, compreende, pratica.")}
       <p>Materiais de apoio escolar para o 2.º ciclo. Escolhe o teu ano e a forma como preferes aprender.</p>
       <a class="action" href="#anos">Escolher ano</a>
-      <a class="action" href="${hgpLink}">História e Geografia · 5.º ano</a>
+    </section>
+    <section class="home-lessons" aria-label="Aulas do 5.º ano">
+      ${lessonMenu("hgp", "História e Geografia · 5.º ano")}
+      ${lessonMenu("matematica", "Matemática · 5.º ano")}
     </section>`;
   } else if (hash === "anos") {
     page.innerHTML = `${heading("Escolhe o teu ano")}
