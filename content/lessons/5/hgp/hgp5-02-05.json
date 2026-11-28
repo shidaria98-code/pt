@@ -132,7 +132,8 @@
             "Iberos"
           ],
           "explanation": "Os Iberos habitavam sobretudo o leste e o sul.",
-          "id": "HGP5.02.05.E01.01"
+          "id": "HGP5.02.05.E01.01",
+          "term": "hist.iberos"
         },
         {
           "prompt": "Diversas regiões do interior, do norte e do oeste",
@@ -145,7 +146,8 @@
             "Celtas"
           ],
           "explanation": "As comunidades celtas ocupavam várias regiões do interior, do norte e do oeste.",
-          "id": "HGP5.02.05.E01.02"
+          "id": "HGP5.02.05.E01.02",
+          "term": "hist.celtas"
         },
         {
           "prompt": "Territórios ocidentais que hoje abrangem zonas de Portugal e Espanha",
@@ -158,7 +160,8 @@
             "Lusitanos"
           ],
           "explanation": "Os Lusitanos habitavam principalmente o oeste peninsular.",
-          "id": "HGP5.02.05.E01.03"
+          "id": "HGP5.02.05.E01.03",
+          "term": "hist.lusitanos"
         }
       ],
       "prompt_ru": "Соотнеси народы с областями, где они жили.",

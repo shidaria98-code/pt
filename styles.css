@@ -132,3 +132,15 @@ footer { text-align: center; padding: 2rem 1rem; color: #52636f; }
 }
 .hgp-part .feedback { margin-block: .25rem .75rem; }
 .hgp-activity .primary { margin-top: .5rem; }
+
+.hero .action { margin: 0 .4rem .4rem 0; }
+.vocabulary-input input {
+  font: inherit;
+  color: inherit;
+  min-height: 44px;
+  min-width: 0;
+  width: 100%;
+  padding: .45rem .65rem;
+  border: 1px solid #aebfc9;
+  border-radius: 8px;
+}

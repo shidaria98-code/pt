@@ -120,6 +120,7 @@ function renderWords() {
   const words = load("pt-words", []);
   return `${heading("O meu dicionário")}
     <p class="muted">Guarda palavras das aulas neste dispositivo.</p>
+    ${words.some(word => word.explanation_pt) ? `<a class="action" href="#dicionario/treinar">Treinar vocabulário</a>` : ""}
     ${words.length ? `<ul class="word-grid">${words.map(word =>
       `<li class="word"><strong>${safe(word.pt)}</strong>
         ${word.explanation_pt ? `<p>${safe(word.explanation_pt)}</p>` : ""}
@@ -127,12 +128,12 @@ function renderWords() {
     ).join("")}</ul>` : '<p class="muted">Ainda não guardaste palavras.</p>'}`;
 }
 
-function saveWords(vocabulary) {
+function saveWords(vocabulary, announce = true) {
   const existing = load("pt-words", []);
   const words = new Map(existing.map(word => [word.id, word]));
   vocabulary.forEach(word => words.set(word.id, { ...words.get(word.id), ...word }));
   save("pt-words", [...words.values()]);
-  $("#word-status").textContent = "Palavras guardadas.";
+  if (announce) $("#word-status").textContent = "Palavras guardadas.";
 }
 
 function renderLesson(lesson, area) {
@@ -221,6 +222,7 @@ function renderRoute(focus = true) {
       ${heading("Estuda, compreende, pratica.")}
       <p>Materiais de apoio escolar para o 2.º ciclo. Escolhe o teu ano e a forma como preferes aprender.</p>
       <a class="action" href="#anos">Escolher ano</a>
+      <a class="action" href="${hgpLink}">História e Geografia · 5.º ano</a>
     </section>`;
   } else if (hash === "anos") {
     page.innerHTML = `${heading("Escolhe o teu ano")}
@@ -253,6 +255,9 @@ function renderRoute(focus = true) {
     openLesson(entry, currentRender);
   } else if (hash === "dicionario") {
     page.innerHTML = renderWords();
+  } else if (hash === "dicionario/treinar") {
+    active = "dicionario";
+    renderVocabularyTrainer();
   } else if (hash === "sobre") {
     page.innerHTML = `<section class="panel">${heading("Sobre o projeto")}
       <p>Plataforma educativa independente em desenvolvimento. Os materiais são originais e sujeitos a revisão pedagógica. As Aprendizagens Essenciais são a referência curricular; a sequência dos temas será organizada com apoio de outras fontes educativas, sem reprodução dos seus conteúdos.</p>

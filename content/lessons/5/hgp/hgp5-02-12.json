@@ -163,7 +163,8 @@
           ],
           "explanation": "Os Suevos estabeleceram-se no noroeste.",
           "points": 1,
-          "id": "HGP5.02.12.V01.01"
+          "id": "HGP5.02.12.V01.01",
+          "term": "hist.suevos"
         },
         {
           "prompt": "Outro povo germânico que entrou na Península em 409 com os Suevos",
@@ -178,7 +179,8 @@
           ],
           "explanation": "Os Vândalos entraram na Península em 409.",
           "points": 1,
-          "id": "HGP5.02.12.V01.02"
+          "id": "HGP5.02.12.V01.02",
+          "term": "hist.vandalos"
         },
         {
           "prompt": "Povo de origem diferente que chegou com os Suevos e os Vândalos",
@@ -193,7 +195,8 @@
           ],
           "explanation": "Os Alanos entraram na Península com Suevos e Vândalos.",
           "points": 1,
-          "id": "HGP5.02.12.V01.03"
+          "id": "HGP5.02.12.V01.03",
+          "term": "hist.alanos"
         }
       ],
       "id": "HGP5.02.12.V01"

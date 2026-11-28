@@ -165,7 +165,8 @@
           "answers": [
             "Uma apresenta os objetivos de Roma e a outra os objetivos das comunidades locais."
           ],
-          "explanation": "Roma procura aumentar o seu poder. As comunidades locais procuram preservar a sua autonomia."
+          "explanation": "Roma procura aumentar o seu poder. As comunidades locais procuram preservar a sua autonomia.",
+          "term": "politics.autonomia"
         }
       ]
     }

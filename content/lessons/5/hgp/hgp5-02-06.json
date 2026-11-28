@@ -125,7 +125,8 @@
             "Fenícios"
           ],
           "explanation": "Gadir foi um importante centro fenício.",
-          "id": "HGP5.02.06.E01.01"
+          "id": "HGP5.02.06.E01.01",
+          "term": "hist.fenicios"
         },
         {
           "prompt": "Emporion, atual Empúries",
@@ -138,7 +139,8 @@
             "Gregos"
           ],
           "explanation": "Emporion foi um estabelecimento grego.",
-          "id": "HGP5.02.06.E01.02"
+          "id": "HGP5.02.06.E01.02",
+          "term": "hist.gregos"
         },
         {
           "prompt": "Cartago como potência marítima peninsular",
@@ -151,7 +153,8 @@
             "Cartagineses"
           ],
           "explanation": "Os Cartagineses expandiram o seu domínio a partir de Cartago.",
-          "id": "HGP5.02.06.E01.03"
+          "id": "HGP5.02.06.E01.03",
+          "term": "hist.cartagineses"
         }
       ],
       "id": "HGP5.02.06.E01"
@@ -166,7 +169,8 @@
           ],
           "explanation": "A difusão de formas de escrita alfabética foi um dos contributos dos Fenícios.",
           "feedback": {},
-          "id": "HGP5.02.06.E02.01"
+          "id": "HGP5.02.06.E02.01",
+          "term": "language.alfabeto"
         }
       ],
       "prompt_ru": "Впиши по-португальски название упорядоченного набора знаков для письма.",

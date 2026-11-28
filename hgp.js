@@ -97,7 +97,7 @@ function updateHgpStorage(key, lessonId, activityId, value) {
   save(key, all);
 }
 
-function connectHgpActivity(form, lessonId, activity, previous) {
+function connectHgpActivity(form, lessonId, activity, previous, dictionary) {
   const result = form.querySelector("[data-result]");
   const messages = [...form.querySelectorAll("[data-feedback]")];
 
@@ -142,6 +142,7 @@ function connectHgpActivity(form, lessonId, activity, previous) {
     event.preventDefault();
     const answers = currentAnswers();
     previous = { answers, ...showResult(answers) };
+    queueVocabularyErrors(activity.parts, answers, dictionary);
     updateHgpStorage("pt-hgp-drafts", lessonId, activity.id, answers);
     updateHgpStorage("pt-hgp-progress", lessonId, activity.id, previous);
   });
@@ -173,5 +174,5 @@ function renderHgpLesson(lesson, dictionary, area) {
   area.querySelector("#add-words").addEventListener("click", () => saveWords(terms));
   const forms = area.querySelectorAll("[data-activity]");
   [...practice, ...checks].forEach((activity, index) =>
-    connectHgpActivity(forms[index], lesson.id, activity, progress[activity.id]));
+    connectHgpActivity(forms[index], lesson.id, activity, progress[activity.id], dictionary));
 }

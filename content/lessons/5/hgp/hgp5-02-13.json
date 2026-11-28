@@ -112,7 +112,8 @@
             "Muçulmano"
           ],
           "explanation": "Muçulmano identifica quem segue a religião islâmica.",
-          "id": "HGP5.02.13.E01.01"
+          "id": "HGP5.02.13.E01.01",
+          "term": "religion.muculmano"
         },
         {
           "prompt": "Designação ligada à língua e à identidade cultural árabes.",
@@ -125,7 +126,8 @@
             "Árabe"
           ],
           "explanation": "Árabe é uma designação linguística e cultural.",
-          "id": "HGP5.02.13.E01.02"
+          "id": "HGP5.02.13.E01.02",
+          "term": "culture.arabe"
         },
         {
           "prompt": "Designação histórica aplicada, em certos contextos, a populações muçulmanas do norte de África e da Península Ibérica.",
@@ -138,7 +140,8 @@
             "Mouro"
           ],
           "explanation": "Mouro é uma designação histórica cujo sentido depende do contexto.",
-          "id": "HGP5.02.13.E01.03"
+          "id": "HGP5.02.13.E01.03",
+          "term": "hist.mouro"
         }
       ],
       "prompt_ru": "Выбери слово по его значению: оно может обозначать культуру, религию или историческую группу.",
@@ -193,7 +196,8 @@
           "explanation": "O Alcorão é o livro sagrado do Islão.",
           "feedback": {},
           "points": 2,
-          "id": "HGP5.02.13.V02.01"
+          "id": "HGP5.02.13.V02.01",
+          "term": "religion.alcorao"
         }
       ],
       "id": "HGP5.02.13.V02"
@@ -213,7 +217,8 @@
           ],
           "explanation": "O termo refere-se a quem segue o Islão.",
           "points": 1,
-          "id": "HGP5.02.13.V03.01"
+          "id": "HGP5.02.13.V03.01",
+          "term": "religion.muculmano"
         },
         {
           "prompt": "Qual é o termo relacionado com uma língua?",
@@ -227,7 +232,8 @@
           ],
           "explanation": "O termo está ligado à língua e à cultura árabes.",
           "points": 1,
-          "id": "HGP5.02.13.V03.02"
+          "id": "HGP5.02.13.V03.02",
+          "term": "culture.arabe"
         },
         {
           "prompt": "Qual é a designação histórica usada em contextos peninsulares e do norte de África?",
@@ -241,7 +247,8 @@
           ],
           "explanation": "Mouro era usado em determinados contextos históricos.",
           "points": 1,
-          "id": "HGP5.02.13.V03.03"
+          "id": "HGP5.02.13.V03.03",
+          "term": "hist.mouro"
         }
       ],
       "id": "HGP5.02.13.V03"
@@ -342,7 +349,8 @@
           ],
           "explanation": "Al-Andalus era uma designação territorial.",
           "points": 1,
-          "id": "HGP5.02.13.V07.01"
+          "id": "HGP5.02.13.V07.01",
+          "term": "hist.al-andalus"
         },
         {
           "prompt": "… situados na…",
@@ -356,7 +364,8 @@
           ],
           "explanation": "Al-Andalus abrangia territórios da Península Ibérica.",
           "points": 1,
-          "id": "HGP5.02.13.V07.02"
+          "id": "HGP5.02.13.V07.02",
+          "term": "hist.al-andalus"
         },
         {
           "prompt": "… sob domínio de autoridades…",
@@ -370,7 +379,8 @@
           ],
           "explanation": "Al-Andalus designava os territórios peninsulares sob domínio muçulmano.",
           "points": 1,
-          "id": "HGP5.02.13.V07.03"
+          "id": "HGP5.02.13.V07.03",
+          "term": "hist.al-andalus"
         }
       ],
       "id": "HGP5.02.13.V07"
@@ -390,7 +400,8 @@
           ],
           "explanation": "O jejum durante o Ramadão é uma prática do Islão.",
           "points": 1,
-          "id": "HGP5.02.13.V08.01"
+          "id": "HGP5.02.13.V08.01",
+          "term": "religion.jejum"
         },
         {
           "prompt": "Viagem a Meca, quando possível",
@@ -404,7 +415,8 @@
           ],
           "explanation": "A peregrinação a Meca é uma prática do Islão.",
           "points": 1,
-          "id": "HGP5.02.13.V08.02"
+          "id": "HGP5.02.13.V08.02",
+          "term": "religion.peregrinacao"
         }
       ],
       "id": "HGP5.02.13.V08"
