@@ -1,0 +1,413 @@
+{
+  "id": "HGP5.02.13",
+  "title": "O Islão e a conquista muçulmana",
+  "sourceMessage": "27c8bed4-8b11-46ae-96d7-03b4ebaec83d",
+  "terms": [
+    "religion.islao",
+    "religion.muculmano",
+    "culture.arabe",
+    "hist.mouro",
+    "person.maome",
+    "religion.profeta",
+    "religion.alcorao",
+    "hist.hegira",
+    "religion.mesquita",
+    "religion.ramadao",
+    "religion.jejum",
+    "religion.peregrinacao",
+    "hist.al-andalus",
+    "hist.ocupacao-territorial"
+  ],
+  "theory": [
+    {
+      "title": "O que vais aprender?",
+      "blocks": [
+        "- Localizar a origem do Islão.\n- Conhecer alguns elementos fundamentais desta religião.\n- Distinguir os conceitos de árabe, muçulmano e mouro.\n- Compreender a expansão dos territórios sob domínio muçulmano.\n- Identificar o início da conquista muçulmana da Península Ibérica."
+      ]
+    },
+    {
+      "title": "1. O nascimento do Islão",
+      "blocks": [
+        "O Islão surgiu no século VII, na Península Arábica.",
+        "Maomé nasceu na cidade de Meca e é considerado pelos muçulmanos o profeta através do qual Deus transmitiu a sua mensagem.",
+        "O Islão é uma religião monoteísta, ou seja, baseia-se na crença num único Deus.",
+        "Em árabe, Deus é designado pela palavra Allah.",
+        "O livro sagrado do Islão é o Alcorão."
+      ]
+    },
+    {
+      "title": "2. A Hégira",
+      "blocks": [
+        "Em 622, Maomé deslocou-se de Meca para Medina.",
+        "Este acontecimento é conhecido como Hégira e marca o início do calendário islâmico.",
+        "Em Medina desenvolveu-se uma comunidade muçulmana.",
+        "Ao longo dos anos seguintes, o Islão difundiu-se por diferentes regiões da Península Arábica."
+      ]
+    },
+    {
+      "title": "3. Alguns princípios do Islão",
+      "blocks": [
+        "Entre as principais práticas religiosas do Islão encontram-se:",
+        "- A profissão de fé.\n- A oração.\n- A ajuda aos necessitados através da contribuição religiosa.\n- O jejum durante o mês do Ramadão.\n- A peregrinação a Meca, quando existem condições para a realizar.",
+        "A mesquita é um local destinado à oração e a outras atividades da comunidade muçulmana."
+      ]
+    },
+    {
+      "title": "4. A expansão muçulmana",
+      "blocks": [
+        "Após a morte de Maomé, em 632, os territórios governados por autoridades muçulmanas expandiram-se.",
+        "A expansão ocorreu por diferentes regiões da Ásia, do norte de África e, posteriormente, da Europa.",
+        "Os territórios eram habitados por populações com diferentes línguas, culturas e religiões.",
+        "Nem todos os habitantes dos territórios governados por muçulmanos eram muçulmanos."
+      ]
+    },
+    {
+      "title": "5. Árabe, muçulmano e mouro",
+      "blocks": [
+        "Estas três palavras não têm exatamente o mesmo significado.",
+        "Árabe é uma designação relacionada com a língua e a identidade cultural árabes.",
+        "Muçulmano é uma pessoa que segue a religião islâmica.",
+        "Mouro é uma designação histórica utilizada, em diferentes contextos, para identificar populações muçulmanas do norte de África e da Península Ibérica.",
+        "Nem todos os árabes são muçulmanos e nem todos os muçulmanos são árabes."
+      ]
+    },
+    {
+      "title": "6. A conquista da Península Ibérica",
+      "blocks": [
+        "No início do século VIII, o Reino Visigótico enfrentava conflitos internos.",
+        "Em 711, forças provenientes do norte de África atravessaram o estreito de Gibraltar.",
+        "Entre os seus comandantes encontrava-se Tarique.",
+        "O rei visigodo Rodrigo foi derrotado.",
+        "Nos anos seguintes, grande parte da Península Ibérica passou para o domínio muçulmano.",
+        "Algumas regiões do norte peninsular permaneceram fora desse domínio."
+      ]
+    },
+    {
+      "title": "7. O Al-Andalus",
+      "blocks": [
+        "Al-Andalus foi o nome utilizado para designar os territórios da Península Ibérica sob domínio muçulmano.",
+        "A sua extensão territorial mudou ao longo dos séculos.",
+        "A presença muçulmana na Península Ibérica prolongou-se durante vários séculos, embora a duração tenha sido diferente em cada região."
+      ]
+    },
+    {
+      "title": "Resumo",
+      "blocks": [
+        "O Islão surgiu na Península Arábica no século VII. A expansão dos territórios sob domínio muçulmano chegou à Península Ibérica em 711. Grande parte do território peninsular passou a integrar o Al-Andalus. É importante distinguir a religião islâmica da identidade cultural árabe e compreender o significado histórico da palavra mouro."
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "prompt": "Identifica o conceito correto.",
+      "parts": [
+        {
+          "prompt": "Pessoa que segue o Islão.",
+          "options": [
+            "Mouro",
+            "Árabe",
+            "Muçulmano"
+          ],
+          "answers": [
+            "Muçulmano"
+          ],
+          "explanation": "Muçulmano identifica quem segue a religião islâmica.",
+          "id": "HGP5.02.13.E01.01"
+        },
+        {
+          "prompt": "Designação ligada à língua e à identidade cultural árabes.",
+          "options": [
+            "Mouro",
+            "Árabe",
+            "Muçulmano"
+          ],
+          "answers": [
+            "Árabe"
+          ],
+          "explanation": "Árabe é uma designação linguística e cultural.",
+          "id": "HGP5.02.13.E01.02"
+        },
+        {
+          "prompt": "Designação histórica aplicada, em certos contextos, a populações muçulmanas do norte de África e da Península Ibérica.",
+          "options": [
+            "Mouro",
+            "Árabe",
+            "Muçulmano"
+          ],
+          "answers": [
+            "Mouro"
+          ],
+          "explanation": "Mouro é uma designação histórica cujo sentido depende do contexto.",
+          "id": "HGP5.02.13.E01.03"
+        }
+      ],
+      "prompt_ru": "Выбери слово по его значению: оно может обозначать культуру, религию или историческую группу.",
+      "id": "HGP5.02.13.E01"
+    },
+    {
+      "prompt": "Em que ano começou a conquista muçulmana da Península Ibérica?",
+      "parts": [
+        {
+          "prompt": "Ano",
+          "answers": [
+            "711"
+          ],
+          "explanation": "Em 711, forças vindas do norte de África atravessaram o estreito de Gibraltar.",
+          "feedback": {
+            "622": "622 é o ano da Hégira, a deslocação de Meca para Medina. A conquista da Península Ibérica começou em 711."
+          },
+          "id": "HGP5.02.13.E02.01"
+        }
+      ],
+      "id": "HGP5.02.13.E02"
+    },
+    {
+      "prompt": "Localiza a origem do Islão.",
+      "parts": [
+        {
+          "prompt": "Região",
+          "options": [
+            "Península Arábica",
+            "Península Ibérica",
+            "Península Itálica"
+          ],
+          "answers": [
+            "Península Arábica"
+          ],
+          "explanation": "O Islão surgiu na Península Arábica, no século VII.",
+          "points": 3,
+          "id": "HGP5.02.13.V01.01"
+        }
+      ],
+      "id": "HGP5.02.13.V01"
+    },
+    {
+      "prompt": "Identifica o livro sagrado do Islão.",
+      "parts": [
+        {
+          "prompt": "Livro",
+          "answers": [
+            "Alcorão",
+            "Corão"
+          ],
+          "explanation": "O Alcorão é o livro sagrado do Islão.",
+          "feedback": {},
+          "points": 2,
+          "id": "HGP5.02.13.V02.01"
+        }
+      ],
+      "id": "HGP5.02.13.V02"
+    },
+    {
+      "prompt": "Distingue árabe, muçulmano e mouro.",
+      "parts": [
+        {
+          "prompt": "Qual é o termo relacionado com a religião islâmica?",
+          "options": [
+            "Mouro",
+            "Árabe",
+            "Muçulmano"
+          ],
+          "answers": [
+            "Muçulmano"
+          ],
+          "explanation": "O termo refere-se a quem segue o Islão.",
+          "points": 1,
+          "id": "HGP5.02.13.V03.01"
+        },
+        {
+          "prompt": "Qual é o termo relacionado com uma língua?",
+          "options": [
+            "Mouro",
+            "Árabe",
+            "Muçulmano"
+          ],
+          "answers": [
+            "Árabe"
+          ],
+          "explanation": "O termo está ligado à língua e à cultura árabes.",
+          "points": 1,
+          "id": "HGP5.02.13.V03.02"
+        },
+        {
+          "prompt": "Qual é a designação histórica usada em contextos peninsulares e do norte de África?",
+          "options": [
+            "Mouro",
+            "Árabe",
+            "Muçulmano"
+          ],
+          "answers": [
+            "Mouro"
+          ],
+          "explanation": "Mouro era usado em determinados contextos históricos.",
+          "points": 1,
+          "id": "HGP5.02.13.V03.03"
+        }
+      ],
+      "id": "HGP5.02.13.V03"
+    },
+    {
+      "prompt": "Identifica a Hégira.",
+      "parts": [
+        {
+          "prompt": "Ponto de partida",
+          "options": [
+            "Meca",
+            "Medina",
+            "Toledo"
+          ],
+          "answers": [
+            "Meca"
+          ],
+          "explanation": "Maomé partiu de Meca.",
+          "points": 1,
+          "id": "HGP5.02.13.V04.01"
+        },
+        {
+          "prompt": "Destino",
+          "options": [
+            "Meca",
+            "Medina",
+            "Toledo"
+          ],
+          "answers": [
+            "Medina"
+          ],
+          "explanation": "Maomé deslocou-se para Medina.",
+          "points": 1,
+          "id": "HGP5.02.13.V04.02"
+        },
+        {
+          "prompt": "Ano",
+          "answers": [
+            "622"
+          ],
+          "explanation": "A Hégira ocorreu em 622 e marca o início do calendário islâmico.",
+          "feedback": {
+            "711": "711 corresponde ao início da conquista muçulmana peninsular. A Hégira ocorreu em 622."
+          },
+          "points": 1,
+          "id": "HGP5.02.13.V04.03"
+        }
+      ],
+      "id": "HGP5.02.13.V04"
+    },
+    {
+      "prompt": "Indica o início da conquista muçulmana.",
+      "parts": [
+        {
+          "prompt": "Ano",
+          "answers": [
+            "711"
+          ],
+          "explanation": "Em 711, forças vindas do norte de África atravessaram o estreito de Gibraltar.",
+          "feedback": {
+            "622": "622 é o ano da Hégira, a deslocação de Meca para Medina. A conquista da Península Ibérica começou em 711."
+          },
+          "points": 2,
+          "id": "HGP5.02.13.V05.01"
+        }
+      ],
+      "id": "HGP5.02.13.V05"
+    },
+    {
+      "prompt": "Identifica o estreito atravessado.",
+      "parts": [
+        {
+          "prompt": "Estreito",
+          "answers": [
+            "Gibraltar",
+            "Estreito de Gibraltar"
+          ],
+          "explanation": "Em 711, forças vindas do norte de África atravessaram Gibraltar.",
+          "feedback": {},
+          "points": 2,
+          "id": "HGP5.02.13.V06.01"
+        }
+      ],
+      "id": "HGP5.02.13.V06"
+    },
+    {
+      "prompt": "Completa a definição de Al-Andalus.",
+      "parts": [
+        {
+          "prompt": "O nome designava…",
+          "options": [
+            "um povo",
+            "um livro",
+            "territórios"
+          ],
+          "answers": [
+            "territórios"
+          ],
+          "explanation": "Al-Andalus era uma designação territorial.",
+          "points": 1,
+          "id": "HGP5.02.13.V07.01"
+        },
+        {
+          "prompt": "… situados na…",
+          "options": [
+            "Península Arábica",
+            "Península Ibérica",
+            "Península Itálica"
+          ],
+          "answers": [
+            "Península Ibérica"
+          ],
+          "explanation": "Al-Andalus abrangia territórios da Península Ibérica.",
+          "points": 1,
+          "id": "HGP5.02.13.V07.02"
+        },
+        {
+          "prompt": "… sob domínio de autoridades…",
+          "options": [
+            "suevas",
+            "romanas",
+            "muçulmanas"
+          ],
+          "answers": [
+            "muçulmanas"
+          ],
+          "explanation": "Al-Andalus designava os territórios peninsulares sob domínio muçulmano.",
+          "points": 1,
+          "id": "HGP5.02.13.V07.03"
+        }
+      ],
+      "id": "HGP5.02.13.V07"
+    },
+    {
+      "prompt": "Identifica duas práticas religiosas.",
+      "parts": [
+        {
+          "prompt": "Durante o mês do Ramadão",
+          "options": [
+            "Jejum",
+            "Hégira",
+            "Conquista"
+          ],
+          "answers": [
+            "Jejum"
+          ],
+          "explanation": "O jejum durante o Ramadão é uma prática do Islão.",
+          "points": 1,
+          "id": "HGP5.02.13.V08.01"
+        },
+        {
+          "prompt": "Viagem a Meca, quando possível",
+          "options": [
+            "Comércio",
+            "Conquista",
+            "Peregrinação"
+          ],
+          "answers": [
+            "Peregrinação"
+          ],
+          "explanation": "A peregrinação a Meca é uma prática do Islão.",
+          "points": 1,
+          "id": "HGP5.02.13.V08.02"
+        }
+      ],
+      "id": "HGP5.02.13.V08"
+    }
+  ]
+}

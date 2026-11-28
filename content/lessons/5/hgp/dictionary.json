@@ -1,0 +1,452 @@
+{
+  "activity.artesanato": {
+    "pt": "Artesanato",
+    "ru": "Ремесло",
+    "explanation_pt": "Produção de objetos através de trabalho manual e técnicas próprias.",
+    "explanation_ru": "Изготовление предметов вручную с помощью специальных инструментов и навыков."
+  },
+  "activity.comercio": {
+    "pt": "Comércio",
+    "ru": "Торговля",
+    "explanation_pt": "Atividade de troca, compra e venda de produtos.",
+    "explanation_ru": "Обмен, покупка и продажа товаров."
+  },
+  "activity.metalurgia": {
+    "pt": "Metalurgia",
+    "ru": "Металлургия",
+    "explanation_pt": "Técnicas utilizadas para obter e trabalhar metais.",
+    "explanation_ru": "Способы получения и обработки металлов."
+  },
+  "activity.navegacao-maritima": {
+    "pt": "Navegação marítima",
+    "ru": "Мореплавание",
+    "explanation_pt": "Deslocação de pessoas e mercadorias por mar.",
+    "explanation_ru": "Путешествия и перевозка товаров по морю на судах."
+  },
+  "culture.adorno": {
+    "pt": "Adorno",
+    "ru": "Украшение",
+    "explanation_pt": "Objeto utilizado para decorar o corpo, a roupa ou outros elementos.",
+    "explanation_ru": "Предмет, которым украшают себя, одежду или другие вещи."
+  },
+  "culture.arabe": {
+    "pt": "Árabe",
+    "ru": "Араб",
+    "explanation_pt": "Pessoa ligada à identidade cultural árabe.",
+    "explanation_ru": "Человек, который принадлежит к арабскому народу или арабской культуре."
+  },
+  "culture.contacto-cultural": {
+    "pt": "Contacto cultural",
+    "ru": "Культурный контакт",
+    "explanation_pt": "Contacto entre comunidades que permite a circulação de costumes e conhecimentos.",
+    "explanation_ru": "Общение между народами, благодаря которому они могут узнавать друг у друга новые обычаи и способы работы."
+  },
+  "culture.cultura": {
+    "pt": "Cultura",
+    "ru": "Культура",
+    "explanation_pt": "Conjunto de conhecimentos, costumes e formas de vida de uma comunidade.",
+    "explanation_ru": "То, как живут люди, во что верят, какие традиции сохраняют и что создают."
+  },
+  "culture.difusao-cultural": {
+    "pt": "Difusão cultural",
+    "ru": "Распространение культуры",
+    "explanation_pt": "Circulação de conhecimentos, técnicas e costumes entre comunidades.",
+    "explanation_ru": "Когда знания, обычаи и способы работы становятся известны другим народам."
+  },
+  "culture.lenda": {
+    "pt": "Lenda",
+    "ru": "Легенда",
+    "explanation_pt": "Narrativa transmitida ao longo do tempo que pode combinar factos e elementos imaginados.",
+    "explanation_ru": "История, которую люди передают из поколения в поколение. В ней могут сочетаться реальные и вымышленные события."
+  },
+  "economy.mercadoria": {
+    "pt": "Mercadoria",
+    "ru": "Товар",
+    "explanation_pt": "Produto destinado à troca ou à venda.",
+    "explanation_ru": "Предмет или продукт, который можно продать или обменять."
+  },
+  "economy.moeda": {
+    "pt": "Moeda",
+    "ru": "Монета",
+    "explanation_pt": "Objeto utilizado como meio de pagamento.",
+    "explanation_ru": "Обычно металлический предмет, которым можно расплачиваться за товары."
+  },
+  "economy.rota-comercial": {
+    "pt": "Rota comercial",
+    "ru": "Торговый путь",
+    "explanation_pt": "Percurso utilizado para transportar e comercializar produtos.",
+    "explanation_ru": "Путь, по которому люди перевозят товары для торговли."
+  },
+  "economy.troca-direta": {
+    "pt": "Troca direta",
+    "ru": "Прямой обмен",
+    "explanation_pt": "Troca de produtos sem utilização de dinheiro.",
+    "explanation_ru": "Обмен одного товара на другой без использования денег."
+  },
+  "geo.capital": {
+    "pt": "Capital",
+    "ru": "Столица",
+    "explanation_pt": "Cidade onde se encontram os principais órgãos de governo de um Estado.",
+    "explanation_ru": "Главный город, из которого управляют государством."
+  },
+  "geo.porto": {
+    "pt": "Porto",
+    "ru": "Порт",
+    "explanation_pt": "Local onde as embarcações podem parar, carregar e descarregar produtos.",
+    "explanation_ru": "Место у воды, где останавливаются суда, загружают и выгружают товары."
+  },
+  "hist.al-andalus": {
+    "pt": "Al-Andalus",
+    "ru": "Аль-Андалус",
+    "explanation_pt": "Nome dos territórios peninsulares sob domínio muçulmano.",
+    "explanation_ru": "Название территорий Пиренейского полуострова, которыми управляли мусульманские правители."
+  },
+  "hist.alanos": {
+    "pt": "Alanos",
+    "ru": "Аланы",
+    "explanation_pt": "Povo de origem iraniana que chegou à Península Ibérica no século V.",
+    "explanation_ru": "Народ, который пришёл на полуостров вместе со свевами и вандалами."
+  },
+  "hist.astures": {
+    "pt": "Ástures",
+    "ru": "Астуры",
+    "explanation_pt": "Povos que habitavam regiões do noroeste peninsular.",
+    "explanation_ru": "Народы, которые жили в северо-западной части полуострова."
+  },
+  "hist.cantabros": {
+    "pt": "Cântabros",
+    "ru": "Кантабры",
+    "explanation_pt": "Povos que habitavam regiões do norte peninsular.",
+    "explanation_ru": "Народы, которые жили на севере Пиренейского полуострова."
+  },
+  "hist.cartagineses": {
+    "pt": "Cartagineses",
+    "ru": "Карфагеняне",
+    "explanation_pt": "Habitantes de Cartago e dos territórios sob o seu domínio.",
+    "explanation_ru": "Жители древнего Карфагена и территорий, которыми он управлял."
+  },
+  "hist.castro": {
+    "pt": "Castro",
+    "ru": "Укреплённое поселение",
+    "explanation_pt": "Povoação protegida por estruturas defensivas, muitas vezes situada num local elevado.",
+    "explanation_ru": "Поселение, защищённое стенами или другими укреплениями. Часто его строили на возвышенности."
+  },
+  "hist.celtas": {
+    "pt": "Celtas",
+    "ru": "Кельты",
+    "explanation_pt": "Povos com características culturais comuns que habitaram várias regiões da Europa.",
+    "explanation_ru": "Народы со схожими языками и обычаями, которые жили в разных частях Европы."
+  },
+  "hist.celtiberos": {
+    "pt": "Celtiberos",
+    "ru": "Кельтиберы",
+    "explanation_pt": "Povos do interior oriental peninsular com características celtas e influências ibéricas.",
+    "explanation_ru": "Народы полуострова, в культуре которых сочетались кельтские особенности и влияние иберов."
+  },
+  "hist.civilizacao": {
+    "pt": "Civilização",
+    "ru": "Цивилизация",
+    "explanation_pt": "Sociedade com formas próprias de organização, conhecimentos e cultura.",
+    "explanation_ru": "Общество со своими правилами жизни, культурой, знаниями и традициями."
+  },
+  "hist.colonia-antiga": {
+    "pt": "Colónia",
+    "ru": "Колония",
+    "explanation_pt": "Neste contexto, povoação fundada por pessoas provenientes de outro território.",
+    "explanation_ru": "В этом историческом разделе — поселение, которое основали люди, прибывшие из другой страны или области."
+  },
+  "hist.conquista": {
+    "pt": "Conquista",
+    "ru": "Завоевание",
+    "explanation_pt": "Obtenção do controlo de um território pela força.",
+    "explanation_ru": "Захват территории с помощью военной силы."
+  },
+  "hist.dominio-territorial": {
+    "pt": "Domínio territorial",
+    "ru": "Контроль над территорией",
+    "explanation_pt": "Controlo exercido sobre um determinado território.",
+    "explanation_ru": "Ситуация, когда народ или государство управляет определённой территорией."
+  },
+  "hist.expansao-territorial": {
+    "pt": "Expansão territorial",
+    "ru": "Расширение территории",
+    "explanation_pt": "Aumento do território controlado por um Estado ou povo.",
+    "explanation_ru": "Увеличение территории, которой управляет государство или народ."
+  },
+  "hist.fenicios": {
+    "pt": "Fenícios",
+    "ru": "Финикийцы",
+    "explanation_pt": "Povo do Mediterrâneo oriental conhecido pela navegação e pelo comércio.",
+    "explanation_ru": "Народ, который жил на восточном берегу Средиземного моря и много путешествовал по морю для торговли."
+  },
+  "hist.foco-resistencia": {
+    "pt": "Foco de resistência",
+    "ru": "Очаг сопротивления",
+    "explanation_pt": "Local ou região onde se desenvolve a resistência.",
+    "explanation_ru": "Место или область, где люди сопротивляются захвату территории."
+  },
+  "hist.gregos": {
+    "pt": "Gregos",
+    "ru": "Греки",
+    "explanation_pt": "Povos de cultura grega que habitavam várias regiões do Mediterrâneo.",
+    "explanation_ru": "Люди, которые жили в Древней Греции и других местах Средиземноморья и имели общие культурные особенности."
+  },
+  "hist.guerras-punicas": {
+    "pt": "Guerras Púnicas",
+    "ru": "Пунические войны",
+    "explanation_pt": "Conflitos militares entre Roma e Cartago.",
+    "explanation_ru": "Войны между Древним Римом и Карфагеном."
+  },
+  "hist.hegira": {
+    "pt": "Hégira",
+    "ru": "Хиджра",
+    "explanation_pt": "Deslocação de Maomé de Meca para Medina, em 622.",
+    "explanation_ru": "Переселение Мухаммеда из Мекки в Медину в 622 году."
+  },
+  "hist.hispania": {
+    "pt": "Hispânia",
+    "ru": "Испания (римская)",
+    "explanation_pt": "Nome utilizado pelos Romanos para designar a Península Ibérica.",
+    "explanation_ru": "Название, которое римляне использовали для Пиренейского полуострова."
+  },
+  "hist.iberos": {
+    "pt": "Iberos",
+    "ru": "Иберы",
+    "explanation_pt": "Povos que habitavam sobretudo o leste e o sul da Península Ibérica.",
+    "explanation_ru": "Народы, которые жили главным образом на востоке и юге Пиренейского полуострова."
+  },
+  "hist.idade-media": {
+    "pt": "Idade Média",
+    "ru": "Средние века",
+    "explanation_pt": "Período histórico situado entre a Idade Antiga e a Idade Moderna.",
+    "explanation_ru": "Период истории между Древним миром и Новым временем."
+  },
+  "hist.lusitania": {
+    "pt": "Lusitânia",
+    "ru": "Лузитания",
+    "explanation_pt": "Província romana situada no oeste da Península Ibérica.",
+    "explanation_ru": "Римская провинция на западе Пиренейского полуострова."
+  },
+  "hist.lusitanos": {
+    "pt": "Lusitanos",
+    "ru": "Лузитаны",
+    "explanation_pt": "Povo que habitava territórios do oeste da Península Ibérica.",
+    "explanation_ru": "Народ, который жил на западе Пиренейского полуострова до появления Португалии."
+  },
+  "hist.memoria-historica": {
+    "pt": "Memória histórica",
+    "ru": "Историческая память",
+    "explanation_pt": "Formas como uma sociedade recorda e representa o passado.",
+    "explanation_ru": "То, как люди помнят прошлое и рассказывают о нём следующим поколениям."
+  },
+  "hist.mouro": {
+    "pt": "Mouro",
+    "ru": "Мавр",
+    "explanation_pt": "Designação histórica aplicada a determinadas populações muçulmanas do norte de África e da Península Ibérica.",
+    "explanation_ru": "Историческое название, которым в прошлом называли некоторые мусульманские народы Северной Африки и Пиренейского полуострова."
+  },
+  "hist.muralha": {
+    "pt": "Muralha",
+    "ru": "Крепостная стена",
+    "explanation_pt": "Parede construída para proteger uma povoação.",
+    "explanation_ru": "Высокая прочная стена, которая защищает поселение."
+  },
+  "hist.ocupacao-territorial": {
+    "pt": "Ocupação territorial",
+    "ru": "Занятие территории",
+    "explanation_pt": "Estabelecimento do controlo sobre um território.",
+    "explanation_ru": "Ситуация, когда одна сторона получает контроль над определённой территорией."
+  },
+  "hist.perspetiva": {
+    "pt": "Perspetiva",
+    "ru": "Точка зрения",
+    "explanation_pt": "Forma de observar e interpretar um acontecimento.",
+    "explanation_ru": "То, как человек смотрит на событие и понимает его."
+  },
+  "hist.povos-germanicos": {
+    "pt": "Povos germânicos",
+    "ru": "Германские народы",
+    "explanation_pt": "Povos com características linguísticas e culturais relacionadas.",
+    "explanation_ru": "Народы Европы, языки и некоторые обычаи которых были похожи."
+  },
+  "hist.proto-historia": {
+    "pt": "Proto-História",
+    "ru": "Протоистория",
+    "explanation_pt": "Período em que conhecemos certas sociedades através de vestígios e de textos produzidos por outros povos.",
+    "explanation_ru": "Период, о котором мы узнаём по древним находкам и письменным рассказам других народов."
+  },
+  "hist.provincia-romana": {
+    "pt": "Província",
+    "ru": "Провинция",
+    "explanation_pt": "Território administrado como parte do domínio romano.",
+    "explanation_ru": "Часть территории, которой управляли римляне."
+  },
+  "hist.resistencia": {
+    "pt": "Resistência",
+    "ru": "Сопротивление",
+    "explanation_pt": "Ação de oposição a uma conquista ou domínio.",
+    "explanation_ru": "Действия людей, которые не хотят подчиняться чужой власти и стараются её остановить."
+  },
+  "hist.romanos": {
+    "pt": "Romanos",
+    "ru": "Римляне",
+    "explanation_pt": "Habitantes de Roma e, em sentido mais amplo, pessoas integradas na sociedade romana.",
+    "explanation_ru": "Жители Древнего Рима, а в более широком смысле — люди, ставшие частью римского общества."
+  },
+  "hist.suevos": {
+    "pt": "Suevos",
+    "ru": "Свевы",
+    "explanation_pt": "Povo germânico que estabeleceu um reino no noroeste peninsular.",
+    "explanation_ru": "Германский народ, который создал королевство на северо-западе полуострова."
+  },
+  "hist.vandalos": {
+    "pt": "Vândalos",
+    "ru": "Вандалы",
+    "explanation_pt": "Povo germânico que passou pela Península Ibérica no século V.",
+    "explanation_ru": "Германский народ, который пришёл на полуостров в V веке."
+  },
+  "hist.visigodos": {
+    "pt": "Visigodos",
+    "ru": "Вестготы",
+    "explanation_pt": "Povo germânico que estabeleceu um reino na Península Ibérica.",
+    "explanation_ru": "Германский народ, который создал королевство на большей части полуострова."
+  },
+  "language.alfabeto": {
+    "pt": "Alfabeto",
+    "ru": "Алфавит",
+    "explanation_pt": "Conjunto ordenado de sinais utilizados num sistema de escrita.",
+    "explanation_ru": "Набор букв или знаков, которые используют для записи слов."
+  },
+  "material.bronze": {
+    "pt": "Bronze",
+    "ru": "Бронза",
+    "explanation_pt": "Metal obtido geralmente pela mistura de cobre e estanho.",
+    "explanation_ru": "Материал, который обычно получают, смешивая медь и олово."
+  },
+  "material.ferro": {
+    "pt": "Ferro",
+    "ru": "Железо",
+    "explanation_pt": "Metal utilizado na produção de diversos instrumentos.",
+    "explanation_ru": "Металл, из которого делают инструменты и другие предметы."
+  },
+  "person.maome": {
+    "pt": "Maomé",
+    "ru": "Мухаммед",
+    "explanation_pt": "Profeta do Islão.",
+    "explanation_ru": "Человек, которого мусульмане считают пророком ислама."
+  },
+  "person.viriato": {
+    "pt": "Viriato",
+    "ru": "Вириат",
+    "explanation_pt": "Líder da resistência lusitana à conquista romana.",
+    "explanation_ru": "Предводитель лузитан, который сопротивлялся римскому завоеванию."
+  },
+  "politics.alianca": {
+    "pt": "Aliança",
+    "ru": "Союз",
+    "explanation_pt": "Acordo de cooperação entre pessoas, povos ou Estados.",
+    "explanation_ru": "Договорённость между людьми или государствами действовать вместе."
+  },
+  "politics.autonomia": {
+    "pt": "Autonomia",
+    "ru": "Самостоятельность",
+    "explanation_pt": "Capacidade de tomar decisões próprias.",
+    "explanation_ru": "Возможность самостоятельно принимать решения."
+  },
+  "politics.imperador": {
+    "pt": "Imperador",
+    "ru": "Император",
+    "explanation_pt": "Governante de um império.",
+    "explanation_ru": "Правитель империи."
+  },
+  "politics.imperio": {
+    "pt": "Império",
+    "ru": "Империя",
+    "explanation_pt": "Conjunto de territórios e povos submetidos a um poder central.",
+    "explanation_ru": "Большое государство, которое объединяет разные территории и народы под общей властью."
+  },
+  "politics.reino": {
+    "pt": "Reino",
+    "ru": "Королевство",
+    "explanation_pt": "Estado governado por um rei ou uma rainha.",
+    "explanation_ru": "Государство, которым управляет король или королева."
+  },
+  "politics.republica": {
+    "pt": "República",
+    "ru": "Республика",
+    "explanation_pt": "Forma de governo em que o poder não pertence a um rei hereditário.",
+    "explanation_ru": "Форма правления, при которой власть не передаётся по наследству от одного монарха другому."
+  },
+  "religion.alcorao": {
+    "pt": "Alcorão",
+    "ru": "Коран",
+    "explanation_pt": "Livro sagrado do Islão.",
+    "explanation_ru": "Главная священная книга мусульман."
+  },
+  "religion.islao": {
+    "pt": "Islão",
+    "ru": "Ислам",
+    "explanation_pt": "Religião monoteísta que surgiu na Península Arábica no século VII.",
+    "explanation_ru": "Религия, которая появилась на Аравийском полуострове в VII веке."
+  },
+  "religion.jejum": {
+    "pt": "Jejum",
+    "ru": "Пост",
+    "explanation_pt": "Prática que implica a abstenção de alimentos durante determinado período.",
+    "explanation_ru": "Отказ от еды на определённое время. В некоторых случаях также от питья."
+  },
+  "religion.mesquita": {
+    "pt": "Mesquita",
+    "ru": "Мечеть",
+    "explanation_pt": "Local de oração e de atividades da comunidade muçulmana.",
+    "explanation_ru": "Здание, где мусульмане молятся и собираются вместе."
+  },
+  "religion.muculmano": {
+    "pt": "Muçulmano",
+    "ru": "Мусульманин",
+    "explanation_pt": "Pessoa que segue o Islão.",
+    "explanation_ru": "Человек, который исповедует ислам."
+  },
+  "religion.peregrinacao": {
+    "pt": "Peregrinação",
+    "ru": "Паломничество",
+    "explanation_pt": "Viagem realizada por motivos religiosos a um lugar considerado sagrado.",
+    "explanation_ru": "Путешествие к месту, которое верующие считают священным."
+  },
+  "religion.profeta": {
+    "pt": "Profeta",
+    "ru": "Пророк",
+    "explanation_pt": "Pessoa considerada transmissora de uma mensagem divina.",
+    "explanation_ru": "Человек, который, согласно религиозным верованиям, передаёт людям послание Бога."
+  },
+  "religion.ramadao": {
+    "pt": "Ramadão",
+    "ru": "Рамадан",
+    "explanation_pt": "Mês do calendário islâmico durante o qual se pratica o jejum religioso.",
+    "explanation_ru": "Месяц мусульманского календаря, в течение которого соблюдают религиозный пост."
+  },
+  "social.crise": {
+    "pt": "Crise",
+    "ru": "Кризис",
+    "explanation_pt": "Período marcado por dificuldades e instabilidade.",
+    "explanation_ru": "Время, когда возникает много серьёзных проблем."
+  },
+  "social.lider": {
+    "pt": "Líder",
+    "ru": "Лидер, предводитель",
+    "explanation_pt": "Pessoa que orienta ou dirige um grupo.",
+    "explanation_ru": "Человек, который руководит группой людей."
+  },
+  "social.migracao": {
+    "pt": "Migração",
+    "ru": "Переселение",
+    "explanation_pt": "Deslocação de pessoas para outro território.",
+    "explanation_ru": "Переезд людей из одного места в другое для временной или постоянной жизни."
+  },
+  "social.povo": {
+    "pt": "Povo",
+    "ru": "Народ",
+    "explanation_pt": "Grupo humano que partilha características culturais e históricas.",
+    "explanation_ru": "Группа людей, которых связывают общая история, культура или традиции."
+  }
+}

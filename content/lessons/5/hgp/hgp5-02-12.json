@@ -1,0 +1,395 @@
+{
+  "id": "HGP5.02.12",
+  "title": "Os povos germânicos na Península Ibérica",
+  "sourceMessage": "27c8bed4-8b11-46ae-96d7-03b4ebaec83d",
+  "terms": [
+    "hist.povos-germanicos",
+    "hist.suevos",
+    "hist.vandalos",
+    "hist.alanos",
+    "hist.visigodos",
+    "social.migracao",
+    "politics.reino",
+    "geo.capital",
+    "hist.idade-media",
+    "social.crise"
+  ],
+  "theory": [
+    {
+      "title": "O que vais aprender?",
+      "blocks": [
+        "- Compreender algumas das transformações ocorridas no final do Império Romano do Ocidente.\n- Identificar os povos que chegaram à Península Ibérica no século V.\n- Conhecer a formação dos reinos suevo e visigótico.\n- Reconhecer elementos da cultura romana que permaneceram após o fim do domínio romano."
+      ]
+    },
+    {
+      "title": "O que já sabes?",
+      "blocks": [
+        "Durante vários séculos, a Península Ibérica fez parte do domínio romano.",
+        "As populações adotaram e adaptaram elementos da cultura romana, como o latim, determinadas técnicas de construção e formas de organização da sociedade."
+      ]
+    },
+    {
+      "title": "1. As dificuldades do Império Romano",
+      "blocks": [
+        "A partir do século III d. C., o Império Romano enfrentou várias dificuldades.",
+        "Existiam problemas económicos, conflitos políticos e dificuldades na defesa de um território muito extenso.",
+        "Diferentes povos estabeleceram contactos com o Império Romano e deslocaram-se para territórios que se encontravam sob o seu domínio.",
+        "Em 395, o Império ficou dividido entre o Império Romano do Ocidente e o Império Romano do Oriente."
+      ]
+    },
+    {
+      "title": "2. A chegada de novos povos",
+      "blocks": [
+        "Em 409, os Suevos, os Vândalos e os Alanos entraram na Península Ibérica.",
+        "Os Suevos e os Vândalos eram povos germânicos. Os Alanos tinham uma origem diferente.",
+        "Estes povos estabeleceram-se em diferentes regiões da Península Ibérica.",
+        "Mais tarde, os Visigodos também passaram a controlar territórios peninsulares.",
+        "A chegada destes povos contribuiu para a transformação da organização política da Península Ibérica."
+      ]
+    },
+    {
+      "title": "3. O Reino dos Suevos",
+      "blocks": [
+        "Os Suevos estabeleceram-se principalmente no noroeste da Península Ibérica.",
+        "Fundaram um reino cuja capital se situava em Bracara Augusta, a atual cidade de Braga.",
+        "O Reino dos Suevos abrangia territórios que atualmente pertencem a Portugal e Espanha.",
+        "Em 585, foi integrado no Reino Visigótico."
+      ]
+    },
+    {
+      "title": "4. O Reino Visigótico",
+      "blocks": [
+        "Os Visigodos estabeleceram o seu domínio sobre grande parte da Península Ibérica.",
+        "Toledo tornou-se a capital do Reino Visigótico.",
+        "Os reis visigodos procuraram organizar o território, estabelecer leis e consolidar o seu poder.",
+        "O Reino Visigótico manteve-se até ao início do século VIII, quando começou a conquista muçulmana."
+      ]
+    },
+    {
+      "title": "5. O fim do Império Romano do Ocidente",
+      "blocks": [
+        "Em 476, terminou o Império Romano do Ocidente.",
+        "Esta data é tradicionalmente utilizada para assinalar o fim da Idade Antiga e o início da Idade Média na Europa ocidental.",
+        "No entanto, as mudanças históricas não aconteceram todas num único ano.",
+        "Muitos elementos da cultura romana continuaram presentes nas sociedades que se desenvolveram depois do fim do Império."
+      ]
+    },
+    {
+      "title": "6. Permanências e mudanças",
+      "blocks": [
+        "A chegada dos povos germânicos provocou mudanças na organização política do território.",
+        "Surgiram novos reinos e novos governantes.",
+        "Contudo, permaneceram vários elementos da cultura romana:",
+        "- O uso do latim.\n- O cristianismo.\n- Determinadas leis e formas de organização.\n- Algumas técnicas de construção.\n- A utilização de cidades e vias de comunicação.",
+        "Os novos povos também contribuíram para a transformação da cultura e da sociedade peninsulares."
+      ]
+    },
+    {
+      "title": "Resumo",
+      "blocks": [
+        "No século V, diferentes povos chegaram à Península Ibérica. Os Suevos estabeleceram um reino no noroeste peninsular e os Visigodos passaram a controlar grande parte do território. Apesar das mudanças políticas, muitos elementos da cultura romana permaneceram."
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "prompt": "Identifica as permanências e as mudanças.",
+      "parts": [
+        {
+          "prompt": "Uso do latim",
+          "options": [
+            "Mudança",
+            "Permanência"
+          ],
+          "answers": [
+            "Permanência"
+          ],
+          "explanation": "O latim continuou a ser utilizado.",
+          "id": "HGP5.02.12.E01.01"
+        },
+        {
+          "prompt": "Aparecimento do Reino dos Suevos",
+          "options": [
+            "Mudança",
+            "Permanência"
+          ],
+          "answers": [
+            "Mudança"
+          ],
+          "explanation": "Surgiram novos reinos e novos governantes.",
+          "id": "HGP5.02.12.E01.02"
+        },
+        {
+          "prompt": "Utilização de vias romanas",
+          "options": [
+            "Mudança",
+            "Permanência"
+          ],
+          "answers": [
+            "Permanência"
+          ],
+          "explanation": "Algumas vias romanas continuaram a ser utilizadas.",
+          "id": "HGP5.02.12.E01.03"
+        },
+        {
+          "prompt": "Toledo como capital visigótica",
+          "options": [
+            "Mudança",
+            "Permanência"
+          ],
+          "answers": [
+            "Mudança"
+          ],
+          "explanation": "Toledo tornou-se a capital de um novo reino.",
+          "id": "HGP5.02.12.E01.04"
+        }
+      ],
+      "prompt_ru": "Определи, что сохранилось после римского владычества, а что изменилось.",
+      "id": "HGP5.02.12.E01"
+    },
+    {
+      "prompt": "Identifica três povos que chegaram em 409.",
+      "parts": [
+        {
+          "prompt": "Povo germânico que fundou um reino com capital em Bracara Augusta",
+          "options": [
+            "Alanos",
+            "Suevos",
+            "Vândalos",
+            "Visigodos"
+          ],
+          "answers": [
+            "Suevos"
+          ],
+          "explanation": "Os Suevos estabeleceram-se no noroeste.",
+          "points": 1,
+          "id": "HGP5.02.12.V01.01"
+        },
+        {
+          "prompt": "Outro povo germânico que entrou na Península em 409 com os Suevos",
+          "options": [
+            "Alanos",
+            "Suevos",
+            "Vândalos",
+            "Visigodos"
+          ],
+          "answers": [
+            "Vândalos"
+          ],
+          "explanation": "Os Vândalos entraram na Península em 409.",
+          "points": 1,
+          "id": "HGP5.02.12.V01.02"
+        },
+        {
+          "prompt": "Povo de origem diferente que chegou com os Suevos e os Vândalos",
+          "options": [
+            "Alanos",
+            "Suevos",
+            "Vândalos",
+            "Visigodos"
+          ],
+          "answers": [
+            "Alanos"
+          ],
+          "explanation": "Os Alanos entraram na Península com Suevos e Vândalos.",
+          "points": 1,
+          "id": "HGP5.02.12.V01.03"
+        }
+      ],
+      "id": "HGP5.02.12.V01"
+    },
+    {
+      "prompt": "Identifica a capital do Reino dos Suevos.",
+      "parts": [
+        {
+          "prompt": "Cidade",
+          "answers": [
+            "Braga",
+            "Bracara Augusta"
+          ],
+          "explanation": "Bracara Augusta, a atual Braga, foi a capital do Reino dos Suevos.",
+          "feedback": {},
+          "points": 2,
+          "id": "HGP5.02.12.V02.01"
+        }
+      ],
+      "id": "HGP5.02.12.V02"
+    },
+    {
+      "prompt": "Localiza o Reino dos Suevos.",
+      "parts": [
+        {
+          "prompt": "Região",
+          "options": [
+            "Sul peninsular",
+            "Nordeste peninsular",
+            "Noroeste peninsular"
+          ],
+          "answers": [
+            "Noroeste peninsular"
+          ],
+          "explanation": "O reino incluía terras do noroeste da Península, hoje em Portugal e Espanha.",
+          "points": 3,
+          "id": "HGP5.02.12.V03.01"
+        }
+      ],
+      "id": "HGP5.02.12.V03"
+    },
+    {
+      "prompt": "Indica o ano do fim do Império Romano do Ocidente.",
+      "parts": [
+        {
+          "prompt": "Ano",
+          "answers": [
+            "476"
+          ],
+          "explanation": "476 é a data tradicional do fim do Império Romano do Ocidente.",
+          "feedback": {},
+          "points": 2,
+          "id": "HGP5.02.12.V04.01"
+        }
+      ],
+      "id": "HGP5.02.12.V04"
+    },
+    {
+      "prompt": "Ordena quatro acontecimentos.",
+      "parts": [
+        {
+          "prompt": "1.º acontecimento",
+          "options": [
+            "Início da conquista muçulmana (711)",
+            "Fim do Império Romano do Ocidente (476)",
+            "Entrada dos Suevos, Vândalos e Alanos (409)",
+            "Integração do Reino dos Suevos no Reino Visigótico (585)"
+          ],
+          "answers": [
+            "Entrada dos Suevos, Vândalos e Alanos (409)"
+          ],
+          "explanation": "Entrada dos Suevos, Vândalos e Alanos (409) ocupa a posição 1 nesta sequência.",
+          "points": 1,
+          "id": "HGP5.02.12.V05.01"
+        },
+        {
+          "prompt": "2.º acontecimento",
+          "options": [
+            "Início da conquista muçulmana (711)",
+            "Fim do Império Romano do Ocidente (476)",
+            "Entrada dos Suevos, Vândalos e Alanos (409)",
+            "Integração do Reino dos Suevos no Reino Visigótico (585)"
+          ],
+          "answers": [
+            "Fim do Império Romano do Ocidente (476)"
+          ],
+          "explanation": "Fim do Império Romano do Ocidente (476) ocupa a posição 2 nesta sequência.",
+          "points": 1,
+          "id": "HGP5.02.12.V05.02"
+        },
+        {
+          "prompt": "3.º acontecimento",
+          "options": [
+            "Início da conquista muçulmana (711)",
+            "Fim do Império Romano do Ocidente (476)",
+            "Entrada dos Suevos, Vândalos e Alanos (409)",
+            "Integração do Reino dos Suevos no Reino Visigótico (585)"
+          ],
+          "answers": [
+            "Integração do Reino dos Suevos no Reino Visigótico (585)"
+          ],
+          "explanation": "Integração do Reino dos Suevos no Reino Visigótico (585) ocupa a posição 3 nesta sequência.",
+          "points": 1,
+          "id": "HGP5.02.12.V05.03"
+        },
+        {
+          "prompt": "4.º acontecimento",
+          "options": [
+            "Início da conquista muçulmana (711)",
+            "Fim do Império Romano do Ocidente (476)",
+            "Entrada dos Suevos, Vândalos e Alanos (409)",
+            "Integração do Reino dos Suevos no Reino Visigótico (585)"
+          ],
+          "answers": [
+            "Início da conquista muçulmana (711)"
+          ],
+          "explanation": "Início da conquista muçulmana (711) ocupa a posição 4 nesta sequência.",
+          "points": 1,
+          "id": "HGP5.02.12.V05.04"
+        }
+      ],
+      "id": "HGP5.02.12.V05"
+    },
+    {
+      "prompt": "Classifica as permanências e as mudanças.",
+      "parts": [
+        {
+          "prompt": "Cristianismo",
+          "options": [
+            "Mudança",
+            "Permanência"
+          ],
+          "answers": [
+            "Permanência"
+          ],
+          "explanation": "O cristianismo continuou presente.",
+          "points": 1,
+          "id": "HGP5.02.12.V06.01"
+        },
+        {
+          "prompt": "Novos governantes",
+          "options": [
+            "Mudança",
+            "Permanência"
+          ],
+          "answers": [
+            "Mudança"
+          ],
+          "explanation": "A formação de novos reinos trouxe novos governantes.",
+          "points": 1,
+          "id": "HGP5.02.12.V06.02"
+        },
+        {
+          "prompt": "Técnicas romanas de construção",
+          "options": [
+            "Mudança",
+            "Permanência"
+          ],
+          "answers": [
+            "Permanência"
+          ],
+          "explanation": "Algumas técnicas romanas de construção continuaram em uso.",
+          "points": 1,
+          "id": "HGP5.02.12.V06.03"
+        },
+        {
+          "prompt": "Integração do Reino dos Suevos no Reino Visigótico",
+          "options": [
+            "Mudança",
+            "Permanência"
+          ],
+          "answers": [
+            "Mudança"
+          ],
+          "explanation": "Em 585, a organização política do noroeste peninsular mudou.",
+          "points": 1,
+          "id": "HGP5.02.12.V06.04"
+        }
+      ],
+      "id": "HGP5.02.12.V06"
+    },
+    {
+      "prompt": "Identifica a capital do Reino Visigótico.",
+      "parts": [
+        {
+          "prompt": "Cidade",
+          "answers": [
+            "Toledo"
+          ],
+          "explanation": "Toledo tornou-se a capital do Reino Visigótico.",
+          "feedback": {},
+          "points": 2,
+          "id": "HGP5.02.12.V07.01"
+        }
+      ],
+      "id": "HGP5.02.12.V07"
+    }
+  ]
+}

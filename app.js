@@ -17,7 +17,7 @@ const LESSONS = [{
   subject: "matematica",
   slug: "fracoes-introducao",
   title: "Frações: partes de um todo"
-}];
+}, ...HGP_LESSONS];
 const YEARS = ["5", "6"];
 const MODE_LABELS = { pt: "Português", ru: "Português + russo" };
 const $ = selector => document.querySelector(selector);
@@ -97,6 +97,8 @@ $(".skip").addEventListener("click", event => {
   $("#page-heading")?.focus();
 });
 
+const hgpLink = "#hgp/5/02";
+
 function renderCatalog() {
   return `<a href="#anos">← Escolher outro ano</a>
     ${heading(`Disciplinas · ${yearLabel(year)}`)}
@@ -105,7 +107,9 @@ function renderCatalog() {
       const lessons = LESSONS.filter(entry => entry.year === year && entry.subject === id);
       return `<article class="subject">
         <h2>${safe(name)}</h2>
-        ${lessons.length ? lessons.map(entry =>
+        ${year === "5" && id === "hgp"
+          ? `<a class="action" href="${hgpLink}">${safe(HGP_TOPIC)}</a>`
+          : lessons.length ? lessons.map(entry =>
           `<a class="action" href="${lessonLink(entry)}">${safe(entry.title)}</a>`
         ).join("") : '<p class="muted">Em preparação</p>'}
       </article>`;
@@ -121,6 +125,14 @@ function renderWords() {
         ${word.explanation_pt ? `<p>${safe(word.explanation_pt)}</p>` : ""}
         ${russian(word.ru, "span")}${russian(word.explanation_ru)}</li>`
     ).join("")}</ul>` : '<p class="muted">Ainda não guardaste palavras.</p>'}`;
+}
+
+function saveWords(vocabulary) {
+  const existing = load("pt-words", []);
+  const words = new Map(existing.map(word => [word.id, word]));
+  vocabulary.forEach(word => words.set(word.id, { ...words.get(word.id), ...word }));
+  save("pt-words", [...words.values()]);
+  $("#word-status").textContent = "Palavras guardadas.";
 }
 
 function renderLesson(lesson, area) {
@@ -151,13 +163,7 @@ function renderLesson(lesson, area) {
       <p id="result" role="status"></p>
     </form>`;
 
-  $("#add-words").addEventListener("click", () => {
-    const existing = load("pt-words", []);
-    const words = new Map(existing.map(word => [word.id, word]));
-    lesson.vocabulary.forEach(word => words.set(word.id, { ...words.get(word.id), ...word }));
-    save("pt-words", [...words.values()]);
-    $("#word-status").textContent = "Palavras guardadas.";
-  });
+  $("#add-words").addEventListener("click", () => saveWords(lesson.vocabulary));
 
   $("#quiz").addEventListener("submit", event => {
     event.preventDefault();
@@ -181,10 +187,20 @@ function renderLesson(lesson, area) {
 async function openLesson(entry, currentRender) {
   const area = $("#lesson");
   try {
-    const response = await fetch(`./content/lessons/${entry.year}/${entry.subject}/${entry.slug}.json`);
-    if (!response.ok) throw new Error("Ficheiro indisponível");
-    const lesson = await response.json();
-    if (currentRender === renderId) renderLesson(lesson, area);
+    const path = `./content/lessons/${entry.year}/${entry.subject}`;
+    const getJson = async name => {
+      const response = await fetch(`${path}/${name}.json`);
+      if (!response.ok) throw new Error("Ficheiro indisponível");
+      return response.json();
+    };
+    const isHgp = entry.subject === "hgp";
+    const [lesson, dictionary] = await Promise.all([
+      getJson(entry.slug),
+      isHgp ? getJson("dictionary") : null
+    ]);
+    if (currentRender !== renderId) return;
+    if (isHgp) renderHgpLesson(lesson, dictionary, area);
+    else renderLesson(lesson, area);
   } catch {
     if (currentRender !== renderId) return;
     area.innerHTML = '<p role="alert">Não foi possível carregar a aula.</p><button type="button">Tentar novamente</button>';
@@ -217,12 +233,18 @@ function renderRoute(focus = true) {
       save("pt-year", year);
     }
     page.innerHTML = renderCatalog();
+  } else if (`#${hash}` === hgpLink) {
+    active = "disciplinas";
+    year = "5";
+    save("pt-year", year);
+    page.innerHTML = renderHgpTopic();
   } else if (entry) {
     active = "disciplinas";
     year = entry.year;
     save("pt-year", year);
     const subjectName = SUBJECTS.find(([id]) => id === entry.subject)[1];
-    page.innerHTML = `<a href="${catalogLink(year)}">← Disciplinas · ${yearLabel(year)}</a>
+    page.innerHTML = `<a href="${entry.subject === "hgp" ? hgpLink : catalogLink(year)}">
+      ${entry.subject === "hgp" ? "← Voltar ao tema" : `← Disciplinas · ${yearLabel(year)}`}</a>
       <article class="panel">
         <p class="tag">${safe(subjectName)} · ${yearLabel(year)} · demonstração</p>
         ${heading(entry.title)}

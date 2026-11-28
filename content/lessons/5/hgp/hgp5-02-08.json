@@ -1,0 +1,225 @@
+{
+  "id": "HGP5.02.08",
+  "title": "A conquista romana da Península Ibérica",
+  "sourceMessage": "4349d650-f3bd-4a05-a436-535888ca5903",
+  "terms": [
+    "hist.civilizacao",
+    "hist.romanos",
+    "politics.imperio",
+    "politics.imperador",
+    "politics.republica",
+    "hist.expansao-territorial",
+    "hist.conquista",
+    "hist.provincia-romana",
+    "hist.hispania",
+    "hist.lusitania",
+    "hist.guerras-punicas",
+    "politics.alianca"
+  ],
+  "theory": [
+    {
+      "title": "O que vais aprender?",
+      "blocks": [
+        "- Localizar a origem da civilização romana.\n- Compreender o conceito de império.\n- Identificar as razões da expansão romana.\n- Conhecer as principais etapas da conquista da Península Ibérica.\n- Localizar acontecimentos numa linha do tempo."
+      ]
+    },
+    {
+      "title": "O que já sabes?",
+      "blocks": [
+        "Antes da chegada dos Romanos, a Península Ibérica era habitada por diferentes povos.",
+        "Os Fenícios, os Gregos e os Cartagineses já tinham estabelecido contactos com as comunidades peninsulares.",
+        "A riqueza em recursos naturais e a localização geográfica da Península Ibérica despertavam o interesse de outros povos."
+      ]
+    },
+    {
+      "title": "1. A origem da civilização romana",
+      "blocks": [
+        "A civilização romana desenvolveu-se a partir da cidade de Roma, situada na Península Itálica, junto ao rio Tibre.",
+        "Inicialmente, Roma era uma pequena comunidade. Ao longo dos séculos, conquistou novos territórios e aumentou o seu poder.",
+        "Os Romanos passaram a controlar vastas regiões da Europa, do norte de África e do oeste da Ásia."
+      ]
+    },
+    {
+      "title": "2. A expansão romana",
+      "blocks": [
+        "A expansão romana ocorreu através de conquistas militares, alianças e outras formas de controlo territorial.",
+        "Entre os motivos da expansão encontravam-se:",
+        "- O acesso a novos recursos naturais.\n- O controlo de territórios e rotas comerciais.\n- O aumento do poder político e militar.\n- A obtenção de riquezas.",
+        "Roma passou por diferentes formas de governo: a Monarquia, a República e o Império.",
+        "A conquista da Península Ibérica começou durante a República Romana e terminou no início do período imperial."
+      ]
+    },
+    {
+      "title": "3. O Império Romano",
+      "blocks": [
+        "Um império é um conjunto de territórios e povos submetidos a um poder central.",
+        "O Império Romano abrangia numerosas regiões em torno do mar Mediterrâneo.",
+        "Os Romanos chamavam ao Mediterrâneo Mare Nostrum, expressão latina que significa «o nosso mar».",
+        "Os territórios conquistados eram organizados em províncias."
+      ]
+    },
+    {
+      "title": "4. A rivalidade entre Roma e Cartago",
+      "blocks": [
+        "Roma e Cartago disputavam o controlo de territórios e rotas comerciais no Mediterrâneo.",
+        "Os conflitos entre estas duas potências ficaram conhecidos como Guerras Púnicas.",
+        "Durante a Segunda Guerra Púnica, os Romanos chegaram à Península Ibérica para combater os Cartagineses.",
+        "A presença romana na Península Ibérica iniciou-se em 218 a. C."
+      ]
+    },
+    {
+      "title": "5. A conquista da Península Ibérica",
+      "blocks": [
+        "Depois de combaterem os Cartagineses, os Romanos procuraram controlar os territórios peninsulares.",
+        "A conquista foi um processo longo.",
+        "Algumas comunidades estabeleceram acordos com Roma. Outras resistiram à conquista.",
+        "Os Lusitanos, os Celtiberos, os Cântabros e outros povos ofereceram resistência em diferentes momentos.",
+        "A conquista romana da Península Ibérica ficou concluída em 19 a. C., durante o governo do imperador Augusto."
+      ]
+    },
+    {
+      "title": "6. A organização do território",
+      "blocks": [
+        "Os Romanos designavam a Península Ibérica por Hispânia.",
+        "Ao longo do domínio romano, a organização administrativa do território sofreu alterações.",
+        "Durante o governo de Augusto, a Hispânia foi organizada em três grandes províncias:",
+        "- Lusitânia.\n- Bética.\n- Tarraconense.",
+        "A Lusitânia incluía uma parte importante do território que atualmente pertence a Portugal, bem como áreas da atual Espanha.",
+        "As fronteiras destas províncias não correspondiam às fronteiras dos países atuais."
+      ]
+    },
+    {
+      "title": "7. A duração da conquista",
+      "blocks": [
+        "Entre o início da conquista, em 218 a. C., e a sua conclusão, em 19 a. C., decorreram aproximadamente dois séculos.",
+        "A conquista não ocorreu ao mesmo tempo em toda a Península Ibérica.",
+        "Este processo prolongado mostra que os povos peninsulares reagiram de diferentes formas à expansão romana."
+      ]
+    },
+    {
+      "title": "Resumo",
+      "blocks": [
+        "A civilização romana desenvolveu-se a partir da cidade de Roma. Os Romanos chegaram à Península Ibérica em 218 a. C., durante a Segunda Guerra Púnica. A conquista terminou em 19 a. C. Os territórios conquistados foram organizados em províncias e integrados no domínio romano."
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "prompt": "Ordena os acontecimentos do mais antigo para o mais recente.",
+      "parts": [
+        {
+          "prompt": "1.º acontecimento",
+          "options": [
+            "Morte de Viriato (139 a. C.)",
+            "Chegada dos Romanos (218 a. C.)",
+            "Conclusão da conquista (19 a. C.)",
+            "Conquista de Numância (133 a. C.)"
+          ],
+          "answers": [
+            "Chegada dos Romanos (218 a. C.)"
+          ],
+          "explanation": "Chegada dos Romanos (218 a. C.) ocupa a posição 1 nesta sequência.",
+          "id": "HGP5.02.08.E01.01"
+        },
+        {
+          "prompt": "2.º acontecimento",
+          "options": [
+            "Morte de Viriato (139 a. C.)",
+            "Chegada dos Romanos (218 a. C.)",
+            "Conclusão da conquista (19 a. C.)",
+            "Conquista de Numância (133 a. C.)"
+          ],
+          "answers": [
+            "Morte de Viriato (139 a. C.)"
+          ],
+          "explanation": "Morte de Viriato (139 a. C.) ocupa a posição 2 nesta sequência.",
+          "id": "HGP5.02.08.E01.02"
+        },
+        {
+          "prompt": "3.º acontecimento",
+          "options": [
+            "Morte de Viriato (139 a. C.)",
+            "Chegada dos Romanos (218 a. C.)",
+            "Conclusão da conquista (19 a. C.)",
+            "Conquista de Numância (133 a. C.)"
+          ],
+          "answers": [
+            "Conquista de Numância (133 a. C.)"
+          ],
+          "explanation": "Conquista de Numância (133 a. C.) ocupa a posição 3 nesta sequência.",
+          "id": "HGP5.02.08.E01.03"
+        },
+        {
+          "prompt": "4.º acontecimento",
+          "options": [
+            "Morte de Viriato (139 a. C.)",
+            "Chegada dos Romanos (218 a. C.)",
+            "Conclusão da conquista (19 a. C.)",
+            "Conquista de Numância (133 a. C.)"
+          ],
+          "answers": [
+            "Conclusão da conquista (19 a. C.)"
+          ],
+          "explanation": "Conclusão da conquista (19 a. C.) ocupa a posição 4 nesta sequência.",
+          "id": "HGP5.02.08.E01.04"
+        }
+      ],
+      "prompt_ru": "Поставь события в порядке от самого раннего к самому позднему. Помни, что в датах до нашей эры большее число означает более ранний год.",
+      "id": "HGP5.02.08.E01"
+    },
+    {
+      "prompt": "Indica se cada opção foi um motivo da expansão romana.",
+      "parts": [
+        {
+          "prompt": "Acesso a novos recursos naturais",
+          "options": [
+            "Foi um motivo",
+            "Não foi um motivo"
+          ],
+          "answers": [
+            "Foi um motivo"
+          ],
+          "explanation": "O controlo de novos territórios dava acesso a mais recursos.",
+          "id": "HGP5.02.08.E02.01"
+        },
+        {
+          "prompt": "Controlo de rotas comerciais",
+          "options": [
+            "Foi um motivo",
+            "Não foi um motivo"
+          ],
+          "answers": [
+            "Foi um motivo"
+          ],
+          "explanation": "Roma procurava controlar por onde circulavam as mercadorias.",
+          "id": "HGP5.02.08.E02.02"
+        },
+        {
+          "prompt": "Redução do poder militar de Roma",
+          "options": [
+            "Foi um motivo",
+            "Não foi um motivo"
+          ],
+          "answers": [
+            "Não foi um motivo"
+          ],
+          "explanation": "A expansão procurava aumentar o poder político e militar de Roma.",
+          "id": "HGP5.02.08.E02.03"
+        },
+        {
+          "prompt": "Obtenção de riquezas",
+          "options": [
+            "Foi um motivo",
+            "Não foi um motivo"
+          ],
+          "answers": [
+            "Foi um motivo"
+          ],
+          "explanation": "A obtenção de riquezas contribuiu para a expansão.",
+          "id": "HGP5.02.08.E02.04"
+        }
+      ],
+      "id": "HGP5.02.08.E02"
+    }
+  ]
+}

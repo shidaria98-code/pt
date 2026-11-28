@@ -1,0 +1,173 @@
+{
+  "id": "HGP5.02.09",
+  "title": "A resistência dos Lusitanos e Viriato",
+  "sourceMessage": "4349d650-f3bd-4a05-a436-535888ca5903",
+  "terms": [
+    "hist.resistencia",
+    "hist.foco-resistencia",
+    "politics.autonomia",
+    "social.lider",
+    "person.viriato",
+    "hist.cantabros",
+    "hist.astures",
+    "culture.lenda",
+    "hist.memoria-historica",
+    "hist.perspetiva"
+  ],
+  "theory": [
+    {
+      "title": "O que vais aprender?",
+      "blocks": [
+        "- Compreender por que razão alguns povos resistiram à conquista romana.\n- Identificar os principais focos de resistência peninsular.\n- Conhecer o papel de Viriato.\n- Distinguir acontecimentos históricos de lendas.\n- Compreender que um acontecimento pode ser apresentado de diferentes perspetivas."
+      ]
+    },
+    {
+      "title": "1. A resistência à conquista romana",
+      "blocks": [
+        "A conquista romana não foi aceite da mesma forma por todos os povos peninsulares.",
+        "Algumas comunidades estabeleceram acordos com Roma. Outras procuraram defender os seus territórios e manter a sua autonomia.",
+        "Entre os principais focos de resistência encontravam-se os Lusitanos, os Celtiberos e os povos do norte da Península Ibérica."
+      ]
+    },
+    {
+      "title": "2. Os Lusitanos",
+      "blocks": [
+        "Os Lusitanos habitavam territórios do oeste da Península Ibérica.",
+        "Viviam em comunidades que praticavam atividades como a agricultura e a criação de animais.",
+        "Durante o século II a. C., participaram em conflitos contra os Romanos."
+      ]
+    },
+    {
+      "title": "3. Viriato",
+      "blocks": [
+        "Viriato foi um dos líderes mais conhecidos da resistência dos Lusitanos à conquista romana.",
+        "Liderou a resistência durante vários anos, aproximadamente entre 147 e 139 a. C.",
+        "Conhecia as características do território e conseguiu organizar grupos que resistiram ao domínio romano.",
+        "Em 139 a. C., Viriato foi assassinado.",
+        "A sua morte enfraqueceu a resistência lusitana, mas a conquista de toda a Península Ibérica ainda não estava concluída."
+      ]
+    },
+    {
+      "title": "4. Outros focos de resistência",
+      "blocks": [
+        "Os Celtiberos também resistiram à expansão romana.",
+        "Numância foi um importante centro de resistência celtibérica.",
+        "A cidade foi conquistada pelos Romanos em 133 a. C.",
+        "Mais tarde, os Romanos enfrentaram a resistência dos Cântabros e dos Ástures, no norte da Península Ibérica.",
+        "A conquista terminou em 19 a. C."
+      ]
+    },
+    {
+      "title": "5. O conhecimento do território",
+      "blocks": [
+        "As características naturais do território influenciavam a vida das comunidades e os conflitos.",
+        "As montanhas, os vales, os rios e os caminhos condicionavam as deslocações.",
+        "O conhecimento do território podia representar uma vantagem para as populações locais."
+      ]
+    },
+    {
+      "title": "6. Viriato e as fontes históricas",
+      "blocks": [
+        "Grande parte das informações escritas sobre Viriato chegou até nós através de autores antigos ligados ao mundo greco-romano.",
+        "Estas fontes são importantes, mas apresentam determinadas perspetivas sobre os acontecimentos.",
+        "Os historiadores comparam diferentes fontes e vestígios para compreender melhor o passado.",
+        "Nem todas as histórias transmitidas sobre Viriato podem ser confirmadas."
+      ]
+    },
+    {
+      "title": "7. História, memória e lenda",
+      "blocks": [
+        "Ao longo dos séculos, Viriato tornou-se uma figura importante da memória histórica portuguesa.",
+        "Existem monumentos, pinturas e histórias que representam a sua figura.",
+        "No entanto, estas representações foram produzidas muito depois da sua morte.",
+        "Uma estátua moderna de Viriato ajuda-nos a compreender como foi recordado pelas gerações posteriores, mas não nos permite conhecer com certeza o seu verdadeiro aspeto físico."
+      ]
+    },
+    {
+      "title": "Resumo",
+      "blocks": [
+        "Vários povos peninsulares resistiram à conquista romana. Viriato foi um importante líder da resistência lusitana durante o século II a. C. Os Celtiberos, os Cântabros e os Ástures também ofereceram resistência. O estudo destes acontecimentos exige a análise cuidadosa das fontes históricas."
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "prompt": "Distingue os factos históricos das afirmações que não podemos confirmar.",
+      "parts": [
+        {
+          "prompt": "Viriato liderou a resistência lusitana.",
+          "options": [
+            "Por confirmar",
+            "Facto histórico"
+          ],
+          "answers": [
+            "Facto histórico"
+          ],
+          "explanation": "Há fontes antigas que referem a sua liderança.",
+          "id": "HGP5.02.09.E01.01"
+        },
+        {
+          "prompt": "Uma estátua moderna prova o aspeto físico de Viriato.",
+          "options": [
+            "Por confirmar",
+            "Facto histórico"
+          ],
+          "answers": [
+            "Por confirmar"
+          ],
+          "explanation": "A estátua mostra como foi recordado em tempos posteriores.",
+          "id": "HGP5.02.09.E01.02"
+        },
+        {
+          "prompt": "Os Romanos conquistaram Numância em 133 a. C.",
+          "options": [
+            "Por confirmar",
+            "Facto histórico"
+          ],
+          "answers": [
+            "Facto histórico"
+          ],
+          "explanation": "A conquista de Numância é um acontecimento documentado.",
+          "id": "HGP5.02.09.E01.03"
+        },
+        {
+          "prompt": "Conhecemos com certeza todas as palavras ditas por Viriato.",
+          "options": [
+            "Por confirmar",
+            "Facto histórico"
+          ],
+          "answers": [
+            "Por confirmar"
+          ],
+          "explanation": "Os relatos chegaram até nós através de autores com perspetivas próprias.",
+          "id": "HGP5.02.09.E01.04"
+        }
+      ],
+      "id": "HGP5.02.09.E01"
+    },
+    {
+      "id": "HGP5.02.09.E02",
+      "context": [
+        "Textos didáticos fictícios — não são citações de fontes antigas.",
+        "Perspetiva A — Roma procura controlar novos territórios e aumentar o seu poder.",
+        "Perspetiva B — As comunidades locais procuram defender os seus territórios e manter a sua autonomia."
+      ],
+      "prompt": "Qual é a principal diferença entre estas perspetivas?",
+      "parts": [
+        {
+          "id": "HGP5.02.09.E02.01",
+          "prompt": "Escolhe a interpretação correta.",
+          "options": [
+            "As duas apresentam exatamente os mesmos objetivos.",
+            "Uma apresenta os objetivos de Roma e a outra os objetivos das comunidades locais.",
+            "Uma refere-se à agricultura e a outra à pesca."
+          ],
+          "answers": [
+            "Uma apresenta os objetivos de Roma e a outra os objetivos das comunidades locais."
+          ],
+          "explanation": "Roma procura aumentar o seu poder. As comunidades locais procuram preservar a sua autonomia."
+        }
+      ]
+    }
+  ]
+}

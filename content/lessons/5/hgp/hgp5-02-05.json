@@ -1,0 +1,213 @@
+{
+  "id": "HGP5.02.05",
+  "title": "Os Iberos, os Celtas e os Celtiberos",
+  "sourceMessage": "2410c895-d652-4c0f-af11-3110c50dc903",
+  "terms": [
+    "hist.iberos",
+    "hist.celtas",
+    "hist.celtiberos",
+    "hist.lusitanos",
+    "social.povo",
+    "culture.cultura",
+    "hist.castro",
+    "hist.muralha",
+    "activity.artesanato",
+    "activity.metalurgia",
+    "material.bronze",
+    "material.ferro",
+    "culture.adorno",
+    "culture.contacto-cultural",
+    "hist.proto-historia"
+  ],
+  "theory": [
+    {
+      "title": "O que vais aprender?",
+      "blocks": [
+        "- Identificar alguns dos povos que habitaram a Península Ibérica antes da chegada dos Romanos.\n- Localizar as principais áreas onde estes povos viviam.\n- Conhecer algumas características dos seus modos de vida.\n- Compreender que os contactos entre povos podem transformar as suas culturas.\n- Reconhecer vestígios materiais destes povos."
+      ]
+    },
+    {
+      "title": "O que já sabes?",
+      "blocks": [
+        "Durante o Neolítico, muitas comunidades começaram a praticar a agricultura e a criação de animais.",
+        "Ao longo dos séculos, desenvolveram novas técnicas, construíram povoações e estabeleceram contactos com outras comunidades.",
+        "A Península Ibérica tornou-se um território habitado por povos com diferentes línguas, costumes e modos de vida."
+      ]
+    },
+    {
+      "title": "1. Os povos da Península Ibérica",
+      "blocks": [
+        "Antes da conquista romana, a Península Ibérica era habitada por diversos povos.",
+        "Entre eles encontravam-se os Iberos, os Celtas, os Celtiberos e outros povos, como os Lusitanos.",
+        "Estes povos não formavam um único país. Organizavam-se em diferentes comunidades e ocupavam diferentes territórios.",
+        "Os seus modos de vida apresentavam semelhanças e diferenças."
+      ]
+    },
+    {
+      "title": "2. Os Iberos",
+      "blocks": [
+        "Os Iberos habitavam sobretudo as regiões orientais e meridionais da Península Ibérica.",
+        "Praticavam atividades como:",
+        "- A agricultura.\n- A criação de animais.\n- O artesanato.\n- A metalurgia.\n- O comércio.",
+        "Algumas comunidades ibéricas construíam povoações fortificadas, utilizavam sistemas de escrita e estabeleciam contactos comerciais com povos do Mediterrâneo.",
+        "Os Iberos produziram objetos de cerâmica, esculturas, moedas e outros materiais que nos ajudam a conhecer a sua cultura."
+      ]
+    },
+    {
+      "title": "3. Os Celtas",
+      "blocks": [
+        "Os povos de cultura celta ocupavam diferentes regiões do interior, do norte e do oeste da Península Ibérica.",
+        "Praticavam a agricultura, a criação de animais e o trabalho dos metais.",
+        "Em algumas regiões, especialmente no noroeste peninsular, existiam povoações fortificadas conhecidas como castros.",
+        "Os Celtas não constituíam um único povo politicamente unido. Existiam diferentes comunidades com características culturais próprias."
+      ]
+    },
+    {
+      "title": "4. Os Celtiberos",
+      "blocks": [
+        "Os Celtiberos habitavam sobretudo algumas regiões do interior oriental da Península Ibérica.",
+        "Apresentavam características culturais celtas e influências resultantes dos contactos com comunidades ibéricas.",
+        "Praticavam atividades agrícolas, criavam animais, trabalhavam os metais e construíam povoações fortificadas.",
+        "Os contactos entre diferentes comunidades contribuíram para a circulação de conhecimentos, objetos, técnicas e costumes."
+      ]
+    },
+    {
+      "title": "5. Os Lusitanos",
+      "blocks": [
+        "Os Lusitanos habitavam principalmente territórios do oeste da Península Ibérica, incluindo áreas que atualmente pertencem a Portugal e Espanha.",
+        "Praticavam atividades como a agricultura e a criação de animais.",
+        "Mais tarde, ficaram conhecidos pela resistência à conquista romana.",
+        "Um dos seus líderes mais conhecidos foi Viriato, que estudaremos no tema dedicado à conquista romana.",
+        "Os Lusitanos não devem ser confundidos com os portugueses atuais. Portugal ainda não existia como reino nessa época."
+      ]
+    },
+    {
+      "title": "6. Os castros",
+      "blocks": [
+        "Os castros eram povoações fortificadas, muitas vezes construídas em locais elevados.",
+        "A sua localização podia facilitar a defesa e a observação do território envolvente.",
+        "Alguns castros possuíam muralhas, habitações, caminhos e espaços destinados a diferentes atividades.",
+        "Em várias povoações do noroeste peninsular encontram-se vestígios de casas de planta circular.",
+        "Em Portugal, a Citânia de Briteiros e a Citânia de Sanfins são importantes exemplos de povoações da cultura castreja."
+      ]
+    },
+    {
+      "title": "7. A metalurgia",
+      "blocks": [
+        "A metalurgia corresponde ao conjunto de técnicas utilizadas para obter e trabalhar os metais.",
+        "Ao longo da Pré-História e da Proto-História, desenvolveram-se técnicas de trabalho do cobre, do bronze e do ferro.",
+        "Os metais permitiam produzir utensílios agrícolas, objetos de adorno e outros instrumentos.",
+        "O desenvolvimento destas técnicas transformou várias atividades económicas e favoreceu os contactos entre comunidades."
+      ]
+    },
+    {
+      "title": "8. Os contactos culturais",
+      "blocks": [
+        "Quando diferentes povos estabeleciam contactos, podiam trocar produtos, conhecimentos e técnicas.",
+        "Por exemplo, uma comunidade podia aprender uma nova técnica de trabalho dos metais através do contacto com outra.",
+        "Estes contactos contribuíam para mudanças culturais, embora muitas tradições anteriores continuassem a existir."
+      ]
+    },
+    {
+      "title": "Resumo",
+      "blocks": [
+        "Antes da conquista romana, a Península Ibérica era habitada por diferentes povos, entre os quais os Iberos, os Celtas, os Celtiberos e os Lusitanos.",
+        "Estas comunidades praticavam a agricultura, a criação de animais, o artesanato e outras atividades.",
+        "Os vestígios arqueológicos permitem conhecer alguns aspetos dos seus modos de vida. Os contactos entre povos contribuíram para a circulação de produtos, conhecimentos e técnicas."
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "prompt": "Identifica os povos pela sua localização aproximada.",
+      "parts": [
+        {
+          "prompt": "Leste e sul da Península Ibérica",
+          "options": [
+            "Celtas",
+            "Iberos",
+            "Lusitanos"
+          ],
+          "answers": [
+            "Iberos"
+          ],
+          "explanation": "Os Iberos habitavam sobretudo o leste e o sul.",
+          "id": "HGP5.02.05.E01.01"
+        },
+        {
+          "prompt": "Diversas regiões do interior, do norte e do oeste",
+          "options": [
+            "Celtas",
+            "Iberos",
+            "Lusitanos"
+          ],
+          "answers": [
+            "Celtas"
+          ],
+          "explanation": "As comunidades celtas ocupavam várias regiões do interior, do norte e do oeste.",
+          "id": "HGP5.02.05.E01.02"
+        },
+        {
+          "prompt": "Territórios ocidentais que hoje abrangem zonas de Portugal e Espanha",
+          "options": [
+            "Celtas",
+            "Iberos",
+            "Lusitanos"
+          ],
+          "answers": [
+            "Lusitanos"
+          ],
+          "explanation": "Os Lusitanos habitavam principalmente o oeste peninsular.",
+          "id": "HGP5.02.05.E01.03"
+        }
+      ],
+      "prompt_ru": "Соотнеси народы с областями, где они жили.",
+      "id": "HGP5.02.05.E01"
+    },
+    {
+      "prompt": "Identifica a função de cada elemento de uma povoação fortificada.",
+      "parts": [
+        {
+          "prompt": "Muralhas",
+          "options": [
+            "Proteção",
+            "Habitação",
+            "Deslocação"
+          ],
+          "answers": [
+            "Proteção"
+          ],
+          "explanation": "As muralhas protegiam o povoado.",
+          "id": "HGP5.02.05.E02.01"
+        },
+        {
+          "prompt": "Casas",
+          "options": [
+            "Proteção",
+            "Habitação",
+            "Deslocação"
+          ],
+          "answers": [
+            "Habitação"
+          ],
+          "explanation": "As casas eram usadas para viver.",
+          "id": "HGP5.02.05.E02.02"
+        },
+        {
+          "prompt": "Caminhos",
+          "options": [
+            "Proteção",
+            "Habitação",
+            "Deslocação"
+          ],
+          "answers": [
+            "Deslocação"
+          ],
+          "explanation": "Os caminhos ligavam as várias partes da povoação.",
+          "id": "HGP5.02.05.E02.03"
+        }
+      ],
+      "id": "HGP5.02.05.E02"
+    }
+  ]
+}

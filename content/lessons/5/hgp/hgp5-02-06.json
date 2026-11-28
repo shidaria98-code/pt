@@ -1,0 +1,176 @@
+{
+  "id": "HGP5.02.06",
+  "title": "Os Fenícios, os Gregos e os Cartagineses",
+  "sourceMessage": "2410c895-d652-4c0f-af11-3110c50dc903",
+  "terms": [
+    "hist.fenicios",
+    "hist.gregos",
+    "hist.cartagineses",
+    "activity.navegacao-maritima",
+    "activity.comercio",
+    "economy.mercadoria",
+    "economy.rota-comercial",
+    "geo.porto",
+    "hist.colonia-antiga",
+    "language.alfabeto",
+    "economy.moeda",
+    "economy.troca-direta",
+    "hist.dominio-territorial",
+    "culture.difusao-cultural"
+  ],
+  "theory": [
+    {
+      "title": "O que vais aprender?",
+      "blocks": [
+        "- Identificar os povos do Mediterrâneo que estabeleceram contactos com a Península Ibérica.\n- Conhecer as principais razões das suas viagens.\n- Compreender a importância do comércio marítimo.\n- Identificar produtos, conhecimentos e técnicas que circularam entre diferentes povos."
+      ]
+    },
+    {
+      "title": "O que já sabes?",
+      "blocks": [
+        "A Península Ibérica possui uma extensa costa marítima.",
+        "A sua localização permite estabelecer contactos com outras regiões através do oceano Atlântico e do mar Mediterrâneo.",
+        "Antes da conquista romana, vários povos mediterrânicos viajaram até à Península Ibérica."
+      ]
+    },
+    {
+      "title": "1. O mar Mediterrâneo",
+      "blocks": [
+        "O mar Mediterrâneo encontra-se entre a Europa, a África e a Ásia.",
+        "Ao longo da História, foi uma importante via de comunicação entre diferentes povos.",
+        "A navegação permitia transportar pessoas, mercadorias e conhecimentos entre regiões afastadas."
+      ]
+    },
+    {
+      "title": "2. Os Fenícios",
+      "blocks": [
+        "Os Fenícios eram originários da costa oriental do Mediterrâneo, numa região que inclui parte do atual Líbano.",
+        "Eram conhecidos pelas suas atividades marítimas, comerciais e artesanais.",
+        "A partir do início do primeiro milénio a. C., estabeleceram contactos e fundaram povoações em diferentes regiões do Mediterrâneo ocidental.",
+        "Na Península Ibérica, procuravam produtos como os metais e outros recursos naturais.",
+        "Entre os seus contributos culturais destacam-se a difusão de formas de escrita alfabética, técnicas artesanais e produtos comerciais.",
+        "Gadir, a atual cidade de Cádis, foi um importante centro fenício."
+      ]
+    },
+    {
+      "title": "3. Os Gregos",
+      "blocks": [
+        "Os Gregos eram originários de diferentes regiões do Mediterrâneo oriental, incluindo territórios da atual Grécia.",
+        "Desenvolveram atividades marítimas e comerciais.",
+        "Fundaram povoações em várias regiões mediterrânicas, incluindo o nordeste da Península Ibérica.",
+        "Emporion, atualmente Empúries, foi um importante estabelecimento grego.",
+        "Os contactos comerciais contribuíram para a circulação de produtos, moedas, objetos de cerâmica e conhecimentos."
+      ]
+    },
+    {
+      "title": "4. Os Cartagineses",
+      "blocks": [
+        "Cartago foi uma cidade fundada por Fenícios no norte de África, numa região que atualmente pertence à Tunísia.",
+        "Ao longo do tempo, tornou-se uma importante potência comercial e marítima.",
+        "Os Cartagineses estabeleceram contactos com diferentes regiões da Península Ibérica.",
+        "Além das atividades comerciais, procuraram controlar territórios e recursos.",
+        "No século III a. C., expandiram o seu domínio em partes da Península Ibérica.",
+        "Os conflitos entre Cartago e Roma contribuíram para a chegada dos Romanos à Península Ibérica.",
+        "Estudaremos esses acontecimentos no próximo tema."
+      ]
+    },
+    {
+      "title": "5. O comércio marítimo",
+      "blocks": [
+        "O comércio corresponde à troca, compra e venda de produtos.",
+        "A navegação permitia transportar grandes quantidades de mercadorias entre diferentes regiões.",
+        "Entre os produtos que circulavam encontravam-se:",
+        "- Metais.\n- Objetos de cerâmica.\n- Tecidos.\n- Azeite.\n- Vinho.\n- Sal.\n- Outros produtos alimentares e artesanais.",
+        "Os produtos variavam consoante os recursos e as atividades económicas de cada região."
+      ]
+    },
+    {
+      "title": "6. As trocas comerciais",
+      "blocks": [
+        "As trocas comerciais podiam realizar-se diretamente através da troca de produtos.",
+        "Em determinadas sociedades e períodos, utilizavam-se também moedas.",
+        "A circulação de mercadorias favorecia o contacto entre pessoas com diferentes línguas, costumes e conhecimentos."
+      ]
+    },
+    {
+      "title": "7. Os contributos culturais",
+      "blocks": [
+        "Os contactos entre povos não se limitavam ao comércio.",
+        "Através destes contactos, podiam circular:",
+        "- Técnicas de navegação.\n- Conhecimentos sobre o trabalho dos metais.\n- Formas de escrita.\n- Técnicas de produção de cerâmica.\n- Costumes e práticas religiosas.\n- Formas de organização das atividades comerciais.",
+        "Estes conhecimentos eram utilizados e adaptados pelas comunidades locais."
+      ]
+    },
+    {
+      "title": "Resumo",
+      "blocks": [
+        "Os Fenícios, os Gregos e os Cartagineses estabeleceram contactos com a Península Ibérica através do Mediterrâneo.",
+        "Procuravam recursos naturais, realizavam trocas comerciais e, em determinados casos, fundavam povoações ou procuravam controlar territórios.",
+        "Estes contactos contribuíram para a circulação de produtos, técnicas e conhecimentos."
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "prompt": "Relaciona cada centro histórico com o povo correspondente.",
+      "parts": [
+        {
+          "prompt": "Gadir, atual Cádis",
+          "options": [
+            "Gregos",
+            "Fenícios",
+            "Cartagineses"
+          ],
+          "answers": [
+            "Fenícios"
+          ],
+          "explanation": "Gadir foi um importante centro fenício.",
+          "id": "HGP5.02.06.E01.01"
+        },
+        {
+          "prompt": "Emporion, atual Empúries",
+          "options": [
+            "Gregos",
+            "Fenícios",
+            "Cartagineses"
+          ],
+          "answers": [
+            "Gregos"
+          ],
+          "explanation": "Emporion foi um estabelecimento grego.",
+          "id": "HGP5.02.06.E01.02"
+        },
+        {
+          "prompt": "Cartago como potência marítima peninsular",
+          "options": [
+            "Gregos",
+            "Fenícios",
+            "Cartagineses"
+          ],
+          "answers": [
+            "Cartagineses"
+          ],
+          "explanation": "Os Cartagineses expandiram o seu domínio a partir de Cartago.",
+          "id": "HGP5.02.06.E01.03"
+        }
+      ],
+      "id": "HGP5.02.06.E01"
+    },
+    {
+      "prompt": "Identifica o conceito.",
+      "parts": [
+        {
+          "prompt": "Conjunto ordenado de sinais utilizados num sistema de escrita.",
+          "answers": [
+            "Alfabeto"
+          ],
+          "explanation": "A difusão de formas de escrita alfabética foi um dos contributos dos Fenícios.",
+          "feedback": {},
+          "id": "HGP5.02.06.E02.01"
+        }
+      ],
+      "prompt_ru": "Впиши по-португальски название упорядоченного набора знаков для письма.",
+      "id": "HGP5.02.06.E02"
+    }
+  ]
+}

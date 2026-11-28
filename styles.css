@@ -113,3 +113,22 @@ footer { text-align: center; padding: 2rem 1rem; color: #52636f; }
   #change-mode { margin-inline-start: 0; }
   .grid, .choice-grid { grid-template-columns: 1fr; }
 }
+
+.hgp-part label {
+  display: grid;
+  align-items: start;
+  gap: .35rem;
+}
+.hgp-part input, .hgp-part select {
+  font: inherit;
+  color: inherit;
+  min-height: 44px;
+  width: 100%;
+  min-width: 0;
+  padding: .45rem .65rem;
+  border: 1px solid #aebfc9;
+  border-radius: 8px;
+  background: white;
+}
+.hgp-part .feedback { margin-block: .25rem .75rem; }
+.hgp-activity .primary { margin-top: .5rem; }
